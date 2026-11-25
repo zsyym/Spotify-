@@ -2,12 +2,12 @@
 //  ViewController.h
 //  Spotify
 //
-//  Created by MacBook Air on 2026/11/12.
+//  Created by MacBook Air on 2026/11/16.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <UIKit/UIKit.h>
 
-@interface ViewController : NSViewController
+@interface ViewController : UIViewController
 
 
 @end

@@ -1,0 +1,39 @@
+# macOS
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+# CocoaPods
+Pods/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Sensitive files
+*.p12
+*.mobileprovision
+*.pem
+*.key
+Secrets.plist
+Secrets.xcconfig
+
+# Node.js
+node_modules/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp

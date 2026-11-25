@@ -1,0 +1,10 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '12.0'
+
+target 'Spotify' do
+  pod 'LookinServer', :configurations => ['Debug']
+  pod 'YYModel'
+  pod 'AFNetworking'
+  pod 'Masonry'
+
+end

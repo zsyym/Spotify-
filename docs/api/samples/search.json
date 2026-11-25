@@ -1,0 +1,23 @@
+{
+  "code": 200,
+  "result": {
+    "songCount": 316,
+    "songs": [
+      {
+        "id": 5366190,
+        "name": "BLUE",
+        "dt": 233098,
+        "ar": [
+          {
+            "id": 126339,
+            "name": "BIGBANG"
+          }
+        ],
+        "al": {
+          "id": 525568,
+          "name": "ALIVE"
+        }
+      }
+    ]
+  }
+}

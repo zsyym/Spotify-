@@ -1,0 +1,1393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0080B603BF314C7C3EDA5493 /* SCAlbumDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF17EA3A21FAECDD4C3DD28 /* SCAlbumDetailViewController.m */; };
+		049F6232D612452488D276A0 /* SCPlaybackQueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59169422C5874F6C84853867 /* SCPlaybackQueueViewController.m */; };
+		05EED0B17D2F44A592674249 /* local-track-0.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 3CDB5DBFA8174837B013E3B0 /* local-track-0.lrc */; };
+		072798300864F46955987449 /* SCRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC0FC70F03226F60CE45010 /* SCRegisterView.m */; };
+		0818E83679C6513971DE664D /* SCSidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B508F26C909E4234AB56028E /* SCSidebarViewController.m */; };
+		083E922E3B154F97410FDD98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87CC410583FA1EE40F7BFB71 /* Main.storyboard */; };
+		0ADFAAA8C0C83B64F7A0DC79 /* SCLibraryItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA8CBE6378D355496AD9DB6 /* SCLibraryItemModel.m */; };
+		0E117D7826A4A5F5B48801A1 /* SCPlayerControlsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F27D8286F4ABC21BABC0523 /* SCPlayerControlsView.m */; };
+		0EDD66CFD92822F8323CF0A3 /* SCPlaylistDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED06617674FBBCD746493B32 /* SCPlaylistDetailView.m */; };
+		11553E4812F74173BB65A2F4 /* SCProfileHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AD5B4039764169A86F970C /* SCProfileHeader.m */; };
+		122C72CC9486C9B58E372075 /* SCAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 551C25057D5F50A187CA2571 /* SCAlbum.m */; };
+		14CC66B5235A5D99DA68DB0D /* SCPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D81F5B9A0BF3E92569BB50B /* SCPlayerViewController.m */; };
+		1705502C1E12489E850109D3 /* SCMusicItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D08DF4915647FD99838072 /* SCMusicItemCell.m */; };
+		1803791DB2C855933960E202 /* SCArtistCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 990E6EF46315F97E6B1842C8 /* SCArtistCardView.m */; };
+		1A56DC33FB80C86314A05907 /* SCRootContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC2719EB2DFFF033B354A9A /* SCRootContainerViewController.m */; };
+		1C1A6D66C5EC9EA820076E08 /* SCMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CA11AD5DB241592858CEF5 /* SCMainTabBarController.m */; };
+		228917731451249EE05F73F9 /* SCAuthFormModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E587069F96E60FAF30D8E7A /* SCAuthFormModel.m */; };
+		2362020803F0BCAFC234B576 /* SCArtistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDD8767834BE1FC8F224D6F /* SCArtistDetailViewController.m */; };
+		29FD4AE5DF184B2D92EFB0C9 /* SCLyricsProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4602C109138E4770B36CA2C6 /* SCLyricsProvider.m */; };
+		2A8C6ACA8F7245FB9AA1DD99 /* SCSettingsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D5519E3F778B4FC0A02D935D /* SCSettingsItem.m */; };
+		2F3ADC8973C4C345272E2818 /* SCHomeShortcutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D385A070A8C7279C2EBBE0F2 /* SCHomeShortcutCell.m */; };
+		2FF056DC8BB2BB09AFB5174C /* SCHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = E96FED974A6E6624C2725F9C /* SCHomeView.m */; };
+		325DEF09E22DC9C1BC3B20E2 /* SCAlbumDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D1F88C6FACD9F4F93CEA74 /* SCAlbumDetailView.m */; };
+		33D4AC1068EEFE997F36CB8A /* SCHomePlaylistCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E1A29E78EBE53C3F326AF6 /* SCHomePlaylistCell.m */; };
+		34B7B377A71CCFB9B640B696 /* SCVerificationCodeInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = D052A727915C40525D91300B /* SCVerificationCodeInputView.m */; };
+		36635944A53A4CB94EC2B144 /* SCMiniPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A5593549F3C9D0790E8535 /* SCMiniPlayerView.m */; };
+		36DDE64D2E3A4C9391658A5A /* SCPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA661F1F7758367300F5CA8 /* SCPlayerView.m */; };
+		3704150693764FD6B624B911 /* SCSettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE9D6DE31BD4A8A8FB9C0B7 /* SCSettingsView.m */; };
+		3A38D7BECBC4CFF72FA6B1C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B77E4F507A1CD0047B516F /* AppDelegate.m */; };
+		3A609A2037A94F88952C5BD0 /* local-track-1.lrc in Resources */ = {isa = PBXBuildFile; fileRef = A257F0A8F6B74CC6BAA01E54 /* local-track-1.lrc */; };
+		3DBFD68AEA8742808E0D15FF /* SCLRCParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5459D638FB3A4EE0BC104D09 /* SCLRCParser.m */; };
+		3FC2BFF99D854E4B9E7FAE2F /* YYModel-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = FD47275770384245AEFFDF90 /* YYModel-LICENSE.txt */; };
+		43F6187199F1C22941BC29A2 /* SCArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C69E414AB6D42577E05A47 /* SCArtist.m */; };
+		4B3061A3ECE492D4915CE313 /* SCSearchResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD27A69CE8649D93D6158E81 /* SCSearchResultCell.m */; };
+		4C4BA2A99A554F67E09360BE /* SCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008A9820F8C72CC813D800BA /* SCHomeViewController.m */; };
+		4E2D4C6CA13A122B18F9636C /* SCLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 332CB6A90DA207E680132708 /* SCLibraryViewController.m */; };
+		4FDBDE266B01254771C8F1B3 /* SCAlbumDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C345D5DB28CE0C3920FD5AD2 /* SCAlbumDetailModel.m */; };
+		4FE5B44B175B953320246B4B /* SCWelcomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 614FB418D538E6357858C1B7 /* SCWelcomeView.m */; };
+		58CF6CA8CAB48257AE3A3799 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 227EB8FA5F95EF27399A73A6 /* main.m */; };
+		5ED55A24174543F6BE405687 /* SCSettingsPreviewState.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC170782C554A48B67F8EFB /* SCSettingsPreviewState.m */; };
+		6240FE79D146C327816AA624 /* SCWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5249C37D31FFEDEABF149FEB /* SCWelcomeViewController.m */; };
+		6497BACDEA1740D0B5F14A6F /* SCEditProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = F591F8D6867F428194285241 /* SCEditProfileView.m */; };
+		65322F67F4AB4A86BB47025C /* SCSettingsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E51D6BDA824501B0C52092 /* SCSettingsCell.m */; };
+		66DF1B4AE3CB4C54A5A0BFC8 /* SCLocalMusicCatalog.m in Sources */ = {isa = PBXBuildFile; fileRef = D275A9B7807B46BDB17B3172 /* SCLocalMusicCatalog.m */; };
+		67B55ED64535189182D7F5CC /* SCPlaylistHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74EFF4B9CEF54984261AA8D3 /* SCPlaylistHeaderView.m */; };
+		681FD02AA3C2F76FC854E8F2 /* SCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6606B1540BB0591790A116A /* SCLoginViewController.m */; };
+		6A126A6A8D527058199C96A4 /* SCTrackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F62E7B815D660B773527E4AB /* SCTrackCell.m */; };
+		6CEDAE5CFDCC09A85AD4A36A /* SCLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE902F6B74299B7E0858714 /* SCLoginView.m */; };
+		725E22B2178E3E2DB91558EA /* SCArtistDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF6E97394D5A1A63EC3E835 /* SCArtistDetailView.m */; };
+		7386C24656C6457A83B0B0DB /* SCEditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DC30388D974979AB927431 /* SCEditProfileViewController.m */; };
+		74F7F90FD495AF25BEC55C8A /* SCPlaylistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA48669E737716BAA074A0DB /* SCPlaylistDetailViewController.m */; };
+		774ED7B500842ACA0BF3E318 /* libPods-Spotify.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C556076D6CD404FFCE1F6DB /* libPods-Spotify.a */; };
+		779A6B6F0517443F80C75086 /* SCMusicNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B67DA26C3B4887B9241CAD /* SCMusicNavigation.m */; };
+		792DEF4B4AA18458393724FA /* SCHomeSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 861D82BAA43DF2F31E485E1D /* SCHomeSectionModel.m */; };
+		7B46430D5F094CD59E77F02C /* SCProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08E363D7E57745BCAB77C808 /* SCProfileView.m */; };
+		80D488C3922EE845E9F7785E /* SCSidebarItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68388B574821540E6C854855 /* SCSidebarItemCell.m */; };
+		816E656276E346B2A0575D93 /* local-track-2.lrc in Resources */ = {isa = PBXBuildFile; fileRef = D51BD67B4A4B4926AD73BF9D /* local-track-2.lrc */; };
+		87D5D311D6987D3FAC575705 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE1BB27B330E5A646CA7636C /* Assets.xcassets */; };
+		8816BC0A1CF940E09FE15E71 /* SCMusicBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B90FB8A9A64105B15F7772 /* SCMusicBrowserView.m */; };
+		89115E00DB4A493991314FB0 /* SCProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A99ECB727C41EF9ADCA0BF /* SCProfileViewController.m */; };
+		8B61FF6EB7A41279DA4D9E20 /* SCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 219F2DE1BB8D26370008A2CD /* SCUser.m */; };
+		8BF3CEFFE8574D3BA3624A28 /* SCLibraryStore.m in Sources */ = {isa = PBXBuildFile; fileRef = BBC8C1B5BC0548F69E892226 /* SCLibraryStore.m */; };
+		8F30C36E07C34DDE87BAF2DD /* SCPlaybackQueueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98F50375CEFF4DA4A89DD2F6 /* SCPlaybackQueueView.m */; };
+		8FE7299DE66645E2A0B8194A /* SCProfileAvatar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFF21C6E9FC48D3B76B478F /* SCProfileAvatar.m */; };
+		9913561E1BD348F99BCAA7C1 /* SCLibraryOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4683FE066FEF491EAE20E0FF /* SCLibraryOptionsViewController.m */; };
+		992A52E2150FFA742AF8D661 /* SCPlaybackSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3C664A3C36C07CB359E6E2 /* SCPlaybackSnapshot.m */; };
+		99589E9375B3AE4F23BCC1FC /* SCSearchResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E6E9A83F4B6B4036EC2ACD /* SCSearchResultModel.m */; };
+		9B531344CE1E5225EB47CE1C /* SCAlbumCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0074C7D6C443025E914E9D63 /* SCAlbumCardView.m */; };
+		9B7E2F05D77D0A6564C014C9 /* SCCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BDA7131A97207BE4CB79B2 /* SCCategoryCell.m */; };
+		9F67B57E5A9979158D347123 /* SCLibraryItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E4B454B251336F9381928D /* SCLibraryItemCell.m */; };
+		A031B07B88F74B749C87DB2D /* SCCatalogDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40376BC9628A4F8AA9AB904E /* SCCatalogDetailView.m */; };
+		A05E9191F40744A59AA9C68A /* SCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58413F89E89F4E57BBCCA479 /* SCSettingsViewController.m */; };
+		A34683B0E6AFCEDD8CBFBAA5 /* SCArtistDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5D8481439E32AD90843DC6 /* SCArtistDetailModel.m */; };
+		A5C11435A00D451E85C838CE /* SCCatalogDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4E9A5FD13048A9A5943BF0 /* SCCatalogDetailViewController.m */; };
+		A725625E44D89D640632975D /* SCFeaturePlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7BAE70D52E250F2BBD460E6 /* SCFeaturePlaceholderView.m */; };
+		A858E4151706407DBD869F31 /* SCPlaybackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA7E2A5635B4639B6C4552E /* SCPlaybackManager.m */; };
+		A94C60371404EDF41D47D0BB /* SCArtistHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D984A52292399F30A2C8EEBC /* SCArtistHeaderView.m */; };
+		AA34E430CB53463BA332C012 /* SCNumberedTrackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED67B515F92743E7986732A1 /* SCNumberedTrackCell.m */; };
+		ADB0F2270F1048D9FE02A948 /* SCAuthTextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CDBDE80E731D4D550E454C5 /* SCAuthTextFieldView.m */; };
+		B27DB1DB43794CEAAFC4E243 /* LookinServer-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = AC5CA4F7BECC47448E48511D /* LookinServer-LICENSE.txt */; };
+		B2D09DDC670F7382EFD8A259 /* SCPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = 657CFD958C4091E8167310B0 /* SCPlaylist.m */; };
+		B6146B80884D4D62A3A18BD6 /* SCReleaseControlsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 593C9173B0B4498A9E2FF099 /* SCReleaseControlsCell.m */; };
+		B99A213C11C777E0E7D59583 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF8EF95912352A3146BEF4B /* UIKit.framework */; };
+		B9B6E8CBBFC84C66B1428265 /* Masonry-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1C58AB7B35BE42F894145762 /* Masonry-LICENSE.txt */; };
+		BA33EF69C5BA4272807C0A68 /* AFNetworking-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4E48E8015A0F4504B87E158F /* AFNetworking-LICENSE.txt */; };
+		BA71B63FCB1B12B07803CCC7 /* SCTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = A754120C88089E3FF7F33F62 /* SCTrack.m */; };
+		BBA15BCE0A5B44D7A00345D0 /* SCStorageUsageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CED4D5938645D4BDCDB08D /* SCStorageUsageView.m */; };
+		BC297864501F06DA2C8A65B7 /* SCHomeDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9541DA880C37D2E6E7AE28C0 /* SCHomeDataProvider.m */; };
+		BD29A3E2806F6439D8226684 /* SCRegistrationFormModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D5227003D9A2596F848271 /* SCRegistrationFormModel.m */; };
+		C5361C5DE36CE9E594F62E76 /* SCRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77060C9E05F3ECA034375123 /* SCRegisterViewController.m */; };
+		C725B88C6E8C40688EA5731E /* SCLyricsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E404BBAAE814C73ABB4E44D /* SCLyricsModel.m */; };
+		C7DC371680CA4DC198C1CF6E /* SCLyricsTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2D507F105C461083F97100 /* SCLyricsTimeline.m */; };
+		CC93A9D47F5015AB3EE378B0 /* SCPlayerProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDA1920134ADAE929394811 /* SCPlayerProgressView.m */; };
+		CCA2CD57A3E7347F14F17862 /* SCPlaylistCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F022B0E7D2C99708CEC87C /* SCPlaylistCardView.m */; };
+		CFB1A666D1C337AACE2612BB /* SCLibraryView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE87CD2BB6266A32B61DB54 /* SCLibraryView.m */; };
+		D8964F80E56EF1C46DCD5C6E /* SCHomeSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D1BC337BB71C657F604CB01 /* SCHomeSectionHeaderView.m */; };
+		D904BEFCEBB4972E8B64E67F /* SCSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F98AF39D8240BCBBF56E7D /* SCSearchView.m */; };
+		DBF79A73E573C0FBE70AB822 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83B32D00D09A0C015506EB6 /* ViewController.m */; };
+		E235739D7D66420E946CD2D0 /* local-track-0-translation.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 46D522A681F64B959B5A9172 /* local-track-0-translation.lrc */; };
+		E3C35359B2184436A5C3768A /* SCPlaylistDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E9433240CAEA20DC074ED5 /* SCPlaylistDetailModel.m */; };
+		E6FC3020C8A34F6BFE974C78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EE7813A102C8556363BDF9D /* LaunchScreen.storyboard */; };
+		E835887FB58F4519A8E2D231 /* SCLyricsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6763A60329294752AF2D0C6D /* SCLyricsView.m */; };
+		EEE44BD5CE3DF7E83CDDB5F3 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 488516FA6F77C8EFE85796B2 /* SceneDelegate.m */; };
+		F1114FE825A54D81A056B30A /* SCSearchDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = DB637DBF38534DB69551493F /* SCSearchDataProvider.m */; };
+		F4FB81816AAC4888915B1B6F /* SCPlaybackQueueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B4537A6634431B2CA2A17 /* SCPlaybackQueueCell.m */; };
+		F7069D768A34442197EB60A6 /* SCLyricsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABCAE61DF84439089174EDC /* SCLyricsViewController.m */; };
+		F70A22C114A283319DD3D7A5 /* SCAlbumHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB9A4F73AB9725607A0066B /* SCAlbumHeaderView.m */; };
+		FB67720D54C659F4886B6799 /* SCSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA5B1C47C850FBA67B63C5E /* SCSearchViewController.m */; };
+		FBF0D7BB14DAE959FBBC1873 /* SCHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41056A122554A25B0F52F8C2 /* SCHomeHeaderView.m */; };
+		FCDE56177D990D6F654E05CB /* SCPlaylistTrackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB39DC9A71A1D9CBCEAA6FD /* SCPlaylistTrackCell.m */; };
+		FED9F660458B433E936E4209 /* local-track-3.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 0D173AFB0A1D47F78465D7D9 /* local-track-3.lrc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0074C7D6C443025E914E9D63 /* SCAlbumCardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAlbumCardView.m; sourceTree = "<group>"; };
+		008A9820F8C72CC813D800BA /* SCHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHomeViewController.m; sourceTree = "<group>"; };
+		03C8280F2054464EA90F626B /* SCCatalogDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCatalogDetailView.h; sourceTree = "<group>"; };
+		046B4537A6634431B2CA2A17 /* SCPlaybackQueueCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCPlaybackQueueCell.m; sourceTree = "<group>"; };
+		07D5227003D9A2596F848271 /* SCRegistrationFormModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCRegistrationFormModel.m; sourceTree = "<group>"; };
+		085483815BBB4B35A39F3A63 /* SCProfileAvatar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCProfileAvatar.h; sourceTree = "<group>"; };
+		08E363D7E57745BCAB77C808 /* SCProfileView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCProfileView.m; sourceTree = "<group>"; };
+		0CDBDE80E731D4D550E454C5 /* SCAuthTextFieldView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAuthTextFieldView.m; sourceTree = "<group>"; };
+		0D173AFB0A1D47F78465D7D9 /* local-track-3.lrc */ = {isa = PBXFileReference; lastKnownFileType = text; path = "local-track-3.lrc"; sourceTree = "<group>"; };
+		0E587069F96E60FAF30D8E7A /* SCAuthFormModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAuthFormModel.m; sourceTree = "<group>"; };
+		0F051932F6AAA3803F7504E4 /* SCSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSearchViewController.h; sourceTree = "<group>"; };
+		0FE902F6B74299B7E0858714 /* SCLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCLoginView.m; sourceTree = "<group>"; };
+		148F678F9BD7BBB106BCCD90 /* SCAuthTextFieldView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAuthTextFieldView.h; sourceTree = "<group>"; };
+		14F15868FE17A4D02B07F28C /* SCHomeHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHomeHeaderView.h; sourceTree = "<group>"; };
+		177385013A76E0A187C578FF /* SCHomeDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHomeDataProvider.h; sourceTree = "<group>"; };
+		1A62BB35FD7E429CB578546C /* SCProfileHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCProfileHeader.h; sourceTree = "<group>"; };
+		1AF17EA3A21FAECDD4C3DD28 /* SCAlbumDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAlbumDetailViewController.m; sourceTree = "<group>"; };
+		1BDD4C929BDF40E0952532CF /* SCMusicNavigation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMusicNavigation.h; sourceTree = "<group>"; };
+		1C58AB7B35BE42F894145762 /* Masonry-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Masonry-LICENSE.txt"; sourceTree = "<group>"; };
+		1CC6791BEFFC79B1CA35FF8C /* SCMiniPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMiniPlayerView.h; sourceTree = "<group>"; };
+		1D1BC337BB71C657F604CB01 /* SCHomeSectionHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHomeSectionHeaderView.m; sourceTree = "<group>"; };
+		1D81F5B9A0BF3E92569BB50B /* SCPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCPlayerViewController.m; sourceTree = "<group>"; };
+		1DFF21C6E9FC48D3B76B478F /* SCProfileAvatar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCProfileAvatar.m; sourceTree = "<group>"; };
+		219F2DE1BB8D26370008A2CD /* SCUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCUser.m; sourceTree = "<group>"; };
+		227EB8FA5F95EF27399A73A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22D08DF4915647FD99838072 /* SCMusicItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCMusicItemCell.m; sourceTree = "<group>"; };
+		290D5DE4317ABCBE90BE74AF /* SCArtistDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCArtistDetailModel.h; sourceTree = "<group>"; };
+		2924A877F571E17FCD51964C /* SCPlaylist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPlaylist.h; sourceTree = "<group>"; };
+		2A3F5BC43A99817F7B052E05 /* SCAlbum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAlbum.h; sourceTree = "<group>"; };
+		2ABCAE61DF84439089174EDC /* SCLyricsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCLyricsViewController.m; sourceTree = "<group>"; };
+		2C0C7D9C188D4F24A1A6F0CE /* SCPlayerStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPlayerStyle.h; sourceTree = "<group>"; };
+		2CA7E2A5635B4639B6C4552E /* SCPlaybackManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCPlaybackManager.m; sourceTree = "<group>"; };
+		2F06BFACD4A984C0CEEDF0BC /* SCArtistDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCArtistDetailView.h; sourceTree = "<group>"; };
+		308E5618A17DB835E0F03BD7 /* SCPlaylistDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPlaylistDetailViewController.h; sourceTree = "<group>"; };
+		31218B6DB6B785E6DCA4BD62 /* SCPlaylistHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPlaylistHeaderView.h; sourceTree = "<group>"; };
+		332CB6A90DA207E680132708 /* SCLibraryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCLibraryViewController.m; sourceTree = "<group>"; };
+		34494469E14EF2E2E99A3346 /* SCPlayerProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPlayerProgressView.h; sourceTree = "<group>"; };
+		34CCED529E8F497DF7BC5886 /* SCHomeSectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHomeSectionModel.h; sourceTree = "<group>"; };
+		356B579B605CC1AD89DA8E25 /* SCSearchResultCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSearchResultCell.h; sourceTree = "<group>"; };
+		35D2931C7EADE74D1AFE5037 /* SCHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHomeViewController.h; sourceTree = "<group>"; };
+		39889298AEB943E0AFF601EA /* SCProfileView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCProfileView.h; sourceTree = "<group>"; };
+		3BA95EDD33F04C2A9410DB54 /* SCReleaseControlsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCReleaseControlsCell.h; sourceTree = "<group>"; };
+		3CDB5DBFA8174837B013E3B0 /* local-track-0.lrc */ = {isa = PBXFileReference; lastKnownFileType = text; path = "local-track-0.lrc"; sourceTree = "<group>"; };
+		3E70BC4A6E4AC1125196AD61 /* SCMainTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMainTabBarController.h; sourceTree = "<group>"; };
+		3F25A47A26386729DD14D71C /* SCWelcomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCWelcomeViewController.h; sourceTree = "<group>"; };
+		3F43B804112E4A3EA5764729 /* SCLocalMusicCatalog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCLocalMusicCatalog.h; sourceTree = "<group>"; };
+		40376BC9628A4F8AA9AB904E /* SCCatalogDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCatalogDetailView.m; sourceTree = "<group>"; };
+		41056A122554A25B0F52F8C2 /* SCHomeHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHomeHeaderView.m; sourceTree = "<group>"; };
+		42E6E9A83F4B6B4036EC2ACD /* SCSearchResultModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSearchResultModel.m; sourceTree = "<group>"; };
+		43E1A29E78EBE53C3F326AF6 /* SCHomePlaylistCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHomePlaylistCell.m; sourceTree = "<group>"; };
+		4602C109138E4770B36CA2C6 /* SCLyricsProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCLyricsProvider.m; sourceTree = "<group>"; };
+		4683FE066FEF491EAE20E0FF /* SCLibraryOptionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCLibraryOptionsViewController.m; sourceTree = "<group>"; };
+		46D522A681F64B959B5A9172 /* local-track-0-translation.lrc */ = {isa = PBXFileReference; lastKnownFileType = text; path = "local-track-0-translation.lrc"; sourceTree = "<group>"; };
+		46F98AF39D8240BCBBF56E7D /* SCSearchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSearchView.m; sourceTree = "<group>"; };
+		47DC986C6322A9CCFD5F38D6 /* SCMusicItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMusicItem.h; sourceTree = "<group>"; };
+		488516FA6F77C8EFE85796B2 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		4B661E22F29A034C59829D13 /* SCAlbumCardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAlbumCardView.h; sourceTree = "<group>"; };
+		4BCA79D093564738A34CB123 /* SCLibraryStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCLibraryStore.h; sourceTree = "<group>"; };
+		4BFF1A90AA014D239955F645 /* SCPlaybackQueueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPlaybackQueueViewController.h; sourceTree = "<group>"; };
+		4C002D1C3EFD0B5743E423D3 /* SCLibraryItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCLibraryItemCell.h; sourceTree = "<group>"; };
+		4E48E8015A0F4504B87E158F /* AFNetworking-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "AFNetworking-LICENSE.txt"; sourceTree = "<group>"; };
+		4FE9D6DE31BD4A8A8FB9C0B7 /* SCSettingsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSettingsView.m; sourceTree = "<group>"; };
+		5006980435A724C460F7E68A /* SCPlaylistDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPlaylistDetailView.h; sourceTree = "<group>"; };
+		511DD7A667602AF7E227C823 /* SCAlbumHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAlbumHeaderView.h; sourceTree = "<group>"; };
+		5249C37D31FFEDEABF149FEB /* SCWelcomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCWelcomeViewController.m; sourceTree = "<group>"; };
+		52902B6AE2357B3354C8DAC7 /* SCAuthFormModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAuthFormModel.h; sourceTree = "<group>"; };
+		5459D638FB3A4EE0BC104D09 /* SCLRCParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCLRCParser.m; sourceTree = "<group>"; };
+		551C25057D5F50A187CA2571 /* SCAlbum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAlbum.m; sourceTree = "<group>"; };
+		57150AD51ABA14CEEE109441 /* SCUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCUser.h; sourceTree = "<group>"; };
+		58413F89E89F4E57BBCCA479 /* SCSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSettingsViewController.m; sourceTree = "<group>"; };
+		59169422C5874F6C84853867 /* SCPlaybackQueueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCPlaybackQueueViewController.m; sourceTree = "<group>"; };
+		593C9173B0B4498A9E2FF099 /* SCReleaseControlsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCReleaseControlsCell.m; sourceTree = "<group>"; };
+		5DA8CBE6378D355496AD9DB6 /* SCLibraryItemModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCLibraryItemModel.m; sourceTree = "<group>"; };
+		5DC170782C554A48B67F8EFB /* SCSettingsPreviewState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSettingsPreviewState.m; sourceTree = "<group>"; };
+		5F3DD96770603D52F977D27D /* SCPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPlayerViewController.h; sourceTree = "<group>"; };
+		614FB418D538E6357858C1B7 /* SCWelcomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCWelcomeView.m; sourceTree = "<group>"; };
+		6462294CBB4A4E70AFC73DB5 /* SCLyricsProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCLyricsProvider.h; sourceTree = "<group>"; };
+		655D4002C2CA490CB08F3B0F /* SCSettingsItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSettingsItem.h; sourceTree = "<group>"; };
+		657CFD958C4091E8167310B0 /* SCPlaylist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCPlaylist.m; sourceTree = "<group>"; };
+		66E32A6849AA406B94A456E0 /* SCEditProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCEditProfileViewController.h; sourceTree = "<group>"; };
+		6763A60329294752AF2D0C6D /* SCLyricsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCLyricsView.m; sourceTree = "<group>"; };
+		68388B574821540E6C854855 /* SCSidebarItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSidebarItemCell.m; sourceTree = "<group>"; };
+		69A1430EF3BC5E4A1FD5B14F /* SCHomeShortcutCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHomeShortcutCell.h; sourceTree = "<group>"; };
+		6B57D285F2D37BFC419AA927 /* SCLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCLoginViewController.h; sourceTree = "<group>"; };
+		6C556076D6CD404FFCE1F6DB /* libPods-Spotify.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Spotify.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C91FC34C7747BA6077E836F /* SCLibraryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCLibraryViewController.h; sourceTree = "<group>"; };
+		6CCB5902E39F4F8E9AB3E748 /* SCSettingsPreviewState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSettingsPreviewState.h; sourceTree = "<group>"; };
+		6E404BBAAE814C73ABB4E44D /* SCLyricsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCLyricsModel.m; sourceTree = "<group>"; };
+		6FC2719EB2DFFF033B354A9A /* SCRootContainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCRootContainerViewController.m; sourceTree = "<group>"; };
+		71D90D9F4198B7ECD54DC9F5 /* SCSearchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSearchView.h; sourceTree = "<group>"; };
+		74EFF4B9CEF54984261AA8D3 /* SCPlaylistHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCPlaylistHeaderView.m; sourceTree = "<group>"; };
+		75047E2E23F63380D8A0A1DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7555101041879081B7DAFC83 /* SCHomePlaylistCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHomePlaylistCell.h; sourceTree = "<group>"; };
+		765AA0DA68F30CF55910673A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76CBCC79B2548C5580B77CF4 /* SCAlbumDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAlbumDetailView.h; sourceTree = "<group>"; };
+		77060C9E05F3ECA034375123 /* SCRegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCRegisterViewController.m; sourceTree = "<group>"; };
+		7CDD8767834BE1FC8F224D6F /* SCArtistDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCArtistDetailViewController.m; sourceTree = "<group>"; };
+		81801064372F6817A3BFA310 /* SCLibraryItemModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCLibraryItemModel.h; sourceTree = "<group>"; };
+		82DC30388D974979AB927431 /* SCEditProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCEditProfileViewController.m; sourceTree = "<group>"; };
+		84B77E4F507A1CD0047B516F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		861D82BAA43DF2F31E485E1D /* SCHomeSectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHomeSectionModel.m; sourceTree = "<group>"; };
+		87D1F88C6FACD9F4F93CEA74 /* SCAlbumDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAlbumDetailView.m; sourceTree = "<group>"; };
+		8BCE8CD61BCD4E888CDD2B7D /* SCPlaybackQueueCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPlaybackQueueCell.h; sourceTree = "<group>"; };
+		8E562F4E7DE541D08CA8FACA /* SCSettingsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSettingsView.h; sourceTree = "<group>"; };
+		9533225439B64580807A88C4 /* SCEditProfileView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCEditProfileView.h; sourceTree = "<group>"; };
+		9541DA880C37D2E6E7AE28C0 /* SCHomeDataProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHomeDataProvider.m; sourceTree = "<group>"; };
+		9682451382B7333633DCF069 /* SCVerificationCodeInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCVerificationCodeInputView.h; sourceTree = "<group>"; };
+		98F50375CEFF4DA4A89DD2F6 /* SCPlaybackQueueView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCPlaybackQueueView.m; sourceTree = "<group>"; };
+		990E6EF46315F97E6B1842C8 /* SCArtistCardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCArtistCardView.m; sourceTree = "<group>"; };
+		9996BE0338983906AF105472 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		99B9A654340AA19CB4CEE0B0 /* SCArtistCardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCArtistCardView.h; sourceTree = "<group>"; };
+		9AAE21F6A60470DDD2125EC4 /* SCSearchResultModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSearchResultModel.h; sourceTree = "<group>"; };
+		9AEA0D62AB1470DB41EC2373 /* SCArtistHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCArtistHeaderView.h; sourceTree = "<group>"; };
+		9B4E9A5FD13048A9A5943BF0 /* SCCatalogDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCatalogDetailViewController.m; sourceTree = "<group>"; };
+		9CC1742D6DEB4FCBAD921D25 /* SCNumberedTrackCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCNumberedTrackCell.h; sourceTree = "<group>"; };
+		9DA661F1F7758367300F5CA8 /* SCPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCPlayerView.m; sourceTree = "<group>"; };
+		9F27D8286F4ABC21BABC0523 /* SCPlayerControlsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCPlayerControlsView.m; sourceTree = "<group>"; };
+		A0C1982FAE068F82E706F6E6 /* SCRootContainerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SCRootContainerViewController.h; sourceTree = "<group>"; };
+		A257F0A8F6B74CC6BAA01E54 /* local-track-1.lrc */ = {isa = PBXFileReference; lastKnownFileType = text; path = "local-track-1.lrc"; sourceTree = "<group>"; };
+		A2C57C5ADBAB8306FE3DF5BC /* SCTrackCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCTrackCell.h; sourceTree = "<group>"; };
+		A3D2503419C566682C043DC6 /* Pods-Spotify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotify.debug.xcconfig"; path = "Target Support Files/Pods-Spotify/Pods-Spotify.debug.xcconfig"; sourceTree = "<group>"; };
+		A514FEDB95264C17AEA00C44 /* SCSettingsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSettingsCell.h; sourceTree = "<group>"; };
+		A58AA964D5CD21E625987BE7 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		A5B2B31207CB4CE18F8E6554 /* SCPlaybackQueueView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPlaybackQueueView.h; sourceTree = "<group>"; };
+		A6E9433240CAEA20DC074ED5 /* SCPlaylistDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCPlaylistDetailModel.m; sourceTree = "<group>"; };
+		A754120C88089E3FF7F33F62 /* SCTrack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCTrack.m; sourceTree = "<group>"; };
+		A82D2CB99EFE665EE651A535 /* SCPlaylistCardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPlaylistCardView.h; sourceTree = "<group>"; };
+		A8792157CB4F27FB949C035F /* Spotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA7B65163388415C90CCA4C1 /* SCProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCProfileViewController.h; sourceTree = "<group>"; };
+		AB2EEA602F744187962042CC /* SCLyricsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCLyricsView.h; sourceTree = "<group>"; };
+		AC5CA4F7BECC47448E48511D /* LookinServer-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "LookinServer-LICENSE.txt"; sourceTree = "<group>"; };
+		AC5D8481439E32AD90843DC6 /* SCArtistDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCArtistDetailModel.m; sourceTree = "<group>"; };
+		B07888E40951FF47D4439249 /* SCTrack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCTrack.h; sourceTree = "<group>"; };
+		B1AFE6144FD1A87496E0111A /* SCLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCLoginView.h; sourceTree = "<group>"; };
+		B1B67DA26C3B4887B9241CAD /* SCMusicNavigation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCMusicNavigation.m; sourceTree = "<group>"; };
+		B3B90FB8A9A64105B15F7772 /* SCMusicBrowserView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCMusicBrowserView.m; sourceTree = "<group>"; };
+		B42FB5F5C12A497CAFE4FCDF /* SCLRCParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCLRCParser.h; sourceTree = "<group>"; };
+		B508F26C909E4234AB56028E /* SCSidebarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSidebarViewController.m; sourceTree = "<group>"; };
+		B59121D761E22B36CEE2E151 /* SCArtist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCArtist.h; sourceTree = "<group>"; };
+		B5BD3AE3AF823A025EFE3839 /* SCMusicStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMusicStyle.h; sourceTree = "<group>"; };
+		B6606B1540BB0591790A116A /* SCLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCLoginViewController.m; sourceTree = "<group>"; };
+		B7BAE70D52E250F2BBD460E6 /* SCFeaturePlaceholderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCFeaturePlaceholderView.m; sourceTree = "<group>"; };
+		B8097758243E3C73FB2A6F5E /* SCArtistDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCArtistDetailViewController.h; sourceTree = "<group>"; };
+		BA5178A49F60DC27A4CA08F6 /* SCAuthStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAuthStyle.h; sourceTree = "<group>"; };
+		BB9F697F072F4733A313914B /* SCCatalogDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCatalogDetailViewController.h; sourceTree = "<group>"; };
+		BBC8C1B5BC0548F69E892226 /* SCLibraryStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCLibraryStore.m; sourceTree = "<group>"; };
+		BF8C2843BB8A2E21AF671408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C06D90717E49586272C10256 /* SCHomeSectionHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHomeSectionHeaderView.h; sourceTree = "<group>"; };
+		C0AD5B4039764169A86F970C /* SCProfileHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCProfileHeader.m; sourceTree = "<group>"; };
+		C20FE31E3B634472B9F81FE2 /* SCLyricsTimeline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCLyricsTimeline.h; sourceTree = "<group>"; };
+		C2E428EA4D0307E663F5E88E /* SCFeaturePlaceholderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFeaturePlaceholderView.h; sourceTree = "<group>"; };
+		C345D5DB28CE0C3920FD5AD2 /* SCAlbumDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAlbumDetailModel.m; sourceTree = "<group>"; };
+		C59CDB0FED33B09A618C75F7 /* SCSidebarViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SCSidebarViewController.h; sourceTree = "<group>"; };
+		C5FEA6942B97BD5132EE1DB7 /* SCRegisterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCRegisterView.h; sourceTree = "<group>"; };
+		C73EDC151E00CD153B9AC7DC /* SCRegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCRegisterViewController.h; sourceTree = "<group>"; };
+		C7967E2348D9C89F5D17F981 /* Pods-Spotify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spotify.release.xcconfig"; path = "Target Support Files/Pods-Spotify/Pods-Spotify.release.xcconfig"; sourceTree = "<group>"; };
+		C9E048EFE170FA1D83ECF633 /* SCPlaylistTrackCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPlaylistTrackCell.h; sourceTree = "<group>"; };
+		CB087BBB2CB14B91A6651AAC /* SCMusicItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMusicItemCell.h; sourceTree = "<group>"; };
+		CCA5B1C47C850FBA67B63C5E /* SCSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSearchViewController.m; sourceTree = "<group>"; };
+		CCE87CD2BB6266A32B61DB54 /* SCLibraryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCLibraryView.m; sourceTree = "<group>"; };
+		CD16BCE7634E4EA3EF76FA91 /* SCPlaylistDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPlaylistDetailModel.h; sourceTree = "<group>"; };
+		CE2844D4482F42278D8DBD12 /* SCMusicBrowserView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMusicBrowserView.h; sourceTree = "<group>"; };
+		CFA72FC93DE01EAB5D81BCDB /* SCSidebarItemCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SCSidebarItemCell.h; sourceTree = "<group>"; };
+		CFB5662B357C68BF03978A62 /* SCCategoryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCategoryCell.h; sourceTree = "<group>"; };
+		CFF8EF95912352A3146BEF4B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D052A727915C40525D91300B /* SCVerificationCodeInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCVerificationCodeInputView.m; sourceTree = "<group>"; };
+		D275A9B7807B46BDB17B3172 /* SCLocalMusicCatalog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCLocalMusicCatalog.m; sourceTree = "<group>"; };
+		D2CA11AD5DB241592858CEF5 /* SCMainTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCMainTabBarController.m; sourceTree = "<group>"; };
+		D385A070A8C7279C2EBBE0F2 /* SCHomeShortcutCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHomeShortcutCell.m; sourceTree = "<group>"; };
+		D3A5593549F3C9D0790E8535 /* SCMiniPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCMiniPlayerView.m; sourceTree = "<group>"; };
+		D4C69E414AB6D42577E05A47 /* SCArtist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCArtist.m; sourceTree = "<group>"; };
+		D4FE0F7B6F574389B6A25D48 /* SCStorageUsageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCStorageUsageView.h; sourceTree = "<group>"; };
+		D51BD67B4A4B4926AD73BF9D /* local-track-2.lrc */ = {isa = PBXFileReference; lastKnownFileType = text; path = "local-track-2.lrc"; sourceTree = "<group>"; };
+		D5519E3F778B4FC0A02D935D /* SCSettingsItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSettingsItem.m; sourceTree = "<group>"; };
+		D6D837E757934993B3C73334 /* SCLyricsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCLyricsModel.h; sourceTree = "<group>"; };
+		D6F022B0E7D2C99708CEC87C /* SCPlaylistCardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCPlaylistCardView.m; sourceTree = "<group>"; };
+		D984A52292399F30A2C8EEBC /* SCArtistHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCArtistHeaderView.m; sourceTree = "<group>"; };
+		DA1FB063474E448F9871172F /* SCSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSettingsViewController.h; sourceTree = "<group>"; };
+		DB637DBF38534DB69551493F /* SCSearchDataProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSearchDataProvider.m; sourceTree = "<group>"; };
+		DD3C664A3C36C07CB359E6E2 /* SCPlaybackSnapshot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCPlaybackSnapshot.m; sourceTree = "<group>"; };
+		DD968D29C5713FB005E51398 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DFE398C44F8553F2DE823991 /* SCAlbumDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAlbumDetailModel.h; sourceTree = "<group>"; };
+		E0C90D09E64E4204B7A577F1 /* SCLibraryOptionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCLibraryOptionsViewController.h; sourceTree = "<group>"; };
+		E3298E0408F81A24C84E6DBC /* SCLibraryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCLibraryView.h; sourceTree = "<group>"; };
+		E3A710BB54A6B8BEF0E5284E /* SCWelcomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCWelcomeView.h; sourceTree = "<group>"; };
+		E4E51D6BDA824501B0C52092 /* SCSettingsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSettingsCell.m; sourceTree = "<group>"; };
+		E571B9401CFC45308D460C0A /* SCPlaybackManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPlaybackManager.h; sourceTree = "<group>"; };
+		E60D4C52F3F42E9549FBD493 /* SCPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPlayerView.h; sourceTree = "<group>"; };
+		E8CED4D5938645D4BDCDB08D /* SCStorageUsageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCStorageUsageView.m; sourceTree = "<group>"; };
+		E96FED974A6E6624C2725F9C /* SCHomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHomeView.m; sourceTree = "<group>"; };
+		E9E4B454B251336F9381928D /* SCLibraryItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCLibraryItemCell.m; sourceTree = "<group>"; };
+		EA48669E737716BAA074A0DB /* SCPlaylistDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCPlaylistDetailViewController.m; sourceTree = "<group>"; };
+		EAFC30E61CF02124C9D3E6D8 /* SCPlayerControlsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPlayerControlsView.h; sourceTree = "<group>"; };
+		EC2D507F105C461083F97100 /* SCLyricsTimeline.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCLyricsTimeline.m; sourceTree = "<group>"; };
+		ED06617674FBBCD746493B32 /* SCPlaylistDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCPlaylistDetailView.m; sourceTree = "<group>"; };
+		ED67B515F92743E7986732A1 /* SCNumberedTrackCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCNumberedTrackCell.m; sourceTree = "<group>"; };
+		EE1BB27B330E5A646CA7636C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFDA1920134ADAE929394811 /* SCPlayerProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCPlayerProgressView.m; sourceTree = "<group>"; };
+		F1A99ECB727C41EF9ADCA0BF /* SCProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCProfileViewController.m; sourceTree = "<group>"; };
+		F229DB0A8E1242E986EF5471 /* SCSearchDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSearchDataProvider.h; sourceTree = "<group>"; };
+		F29ACD7BE7D04748922C1735 /* SCPlaybackSnapshot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPlaybackSnapshot.h; sourceTree = "<group>"; };
+		F591F8D6867F428194285241 /* SCEditProfileView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCEditProfileView.m; sourceTree = "<group>"; };
+		F62E7B815D660B773527E4AB /* SCTrackCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCTrackCell.m; sourceTree = "<group>"; };
+		F7BDA7131A97207BE4CB79B2 /* SCCategoryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCategoryCell.m; sourceTree = "<group>"; };
+		F83B32D00D09A0C015506EB6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FA0721F012A4460FB77F036C /* SCLyricsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCLyricsViewController.h; sourceTree = "<group>"; };
+		FA559B5D031C6D94477B6B57 /* SCAlbumDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAlbumDetailViewController.h; sourceTree = "<group>"; };
+		FCCF98B1566F7EAB630A60D5 /* SCRegistrationFormModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCRegistrationFormModel.h; sourceTree = "<group>"; };
+		FD27A69CE8649D93D6158E81 /* SCSearchResultCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSearchResultCell.m; sourceTree = "<group>"; };
+		FD47275770384245AEFFDF90 /* YYModel-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "YYModel-LICENSE.txt"; sourceTree = "<group>"; };
+		FDB39DC9A71A1D9CBCEAA6FD /* SCPlaylistTrackCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCPlaylistTrackCell.m; sourceTree = "<group>"; };
+		FDB9A4F73AB9725607A0066B /* SCAlbumHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAlbumHeaderView.m; sourceTree = "<group>"; };
+		FDF6E97394D5A1A63EC3E835 /* SCArtistDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCArtistDetailView.m; sourceTree = "<group>"; };
+		FF646192F87BF9CF25AB01F7 /* SCHomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHomeView.h; sourceTree = "<group>"; };
+		FFC0FC70F03226F60CE45010 /* SCRegisterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCRegisterView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D01038EF30B7109A00CE7582 /* Core */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Core; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2AA269EB967A8853A258BFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B99A213C11C777E0E7D59583 /* UIKit.framework in Frameworks */,
+				774ED7B500842ACA0BF3E318 /* libPods-Spotify.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03883B9C6A3F8428707A4747 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				308E5618A17DB835E0F03BD7 /* SCPlaylistDetailViewController.h */,
+				EA48669E737716BAA074A0DB /* SCPlaylistDetailViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0A3E27B8CA818264D75C8D81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8792157CB4F27FB949C035F /* Spotify.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D6E4079E36703EBD37C0072 = {
+			isa = PBXGroup;
+			children = (
+				2FEED5C7526372AC21918737 /* . */,
+				0A3E27B8CA818264D75C8D81 /* Products */,
+				2BEEDD5E1A1AEEFB6129979F /* Frameworks */,
+				8750A8BD9279AC92DF5BEFDB /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		0F07A2807FF44CC58B9D55D9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				76CBCC79B2548C5580B77CF4 /* SCAlbumDetailView.h */,
+				87D1F88C6FACD9F4F93CEA74 /* SCAlbumDetailView.m */,
+				511DD7A667602AF7E227C823 /* SCAlbumHeaderView.h */,
+				FDB9A4F73AB9725607A0066B /* SCAlbumHeaderView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		103320F40787DE4F03C4D4F0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0F051932F6AAA3803F7504E4 /* SCSearchViewController.h */,
+				CCA5B1C47C850FBA67B63C5E /* SCSearchViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		228D424F3DBE2C2AFE566D45 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3E70BC4A6E4AC1125196AD61 /* SCMainTabBarController.h */,
+				BB9F697F072F4733A313914B /* SCCatalogDetailViewController.h */,
+				1BDD4C929BDF40E0952532CF /* SCMusicNavigation.h */,
+				D2CA11AD5DB241592858CEF5 /* SCMainTabBarController.m */,
+				9B4E9A5FD13048A9A5943BF0 /* SCCatalogDetailViewController.m */,
+				B1B67DA26C3B4887B9241CAD /* SCMusicNavigation.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		23A09E0A7C234B6A8CBD8845 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D6D837E757934993B3C73334 /* SCLyricsModel.h */,
+				6E404BBAAE814C73ABB4E44D /* SCLyricsModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		23A80887EFF30F6C0579054F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD16BCE7634E4EA3EF76FA91 /* SCPlaylistDetailModel.h */,
+				A6E9433240CAEA20DC074ED5 /* SCPlaylistDetailModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		268166F27984CF5799285F4C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				177385013A76E0A187C578FF /* SCHomeDataProvider.h */,
+				9541DA880C37D2E6E7AE28C0 /* SCHomeDataProvider.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2AC92541E57B32128572CAB1 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				DDB793C209DF403295FC176C /* Lyrics */,
+				CE8856E908A44242B45C2A40 /* Services */,
+				75D08D4EE6F4B005E999CBEA /* Models */,
+				6D96071D1AC7F51E235CA089 /* ViewControllers */,
+				3307D477E401F878A047FB04 /* Views */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		2BEEDD5E1A1AEEFB6129979F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFF8EF95912352A3146BEF4B /* UIKit.framework */,
+				6C556076D6CD404FFCE1F6DB /* libPods-Spotify.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FEED5C7526372AC21918737 /* . */ = {
+			isa = PBXGroup;
+			children = (
+				D01038EF30B7109A00CE7582 /* Core */,
+				6AAF30F86BAADA9BC1953BFC /* Album */,
+				773E056326812C508B12EEB1 /* Artist */,
+				F54F80E750ED2CFD078D9632 /* Auth */,
+				C240EDB10E9628DED760D7BE /* Common */,
+				47D66B53CB88F241B6F3E0ED /* Home */,
+				72BDB845BDD3342830F86F5E /* Sidebar */,
+				47B6AE4EAA074487AD475765 /* Settings */,
+				F387CBBB176546049DD7F2A5 /* Profile */,
+				594E2DED13033CFB1096AC75 /* Library */,
+				2AC92541E57B32128572CAB1 /* Player */,
+				80278E1260561DCD59BEEC64 /* Playlist */,
+				3286AF6FAB9A64AF3E22D46A /* Search */,
+				9996BE0338983906AF105472 /* AppDelegate.h */,
+				84B77E4F507A1CD0047B516F /* AppDelegate.m */,
+				A58AA964D5CD21E625987BE7 /* SceneDelegate.h */,
+				488516FA6F77C8EFE85796B2 /* SceneDelegate.m */,
+				DD968D29C5713FB005E51398 /* ViewController.h */,
+				F83B32D00D09A0C015506EB6 /* ViewController.m */,
+				227EB8FA5F95EF27399A73A6 /* main.m */,
+				765AA0DA68F30CF55910673A /* Info.plist */,
+				EE1BB27B330E5A646CA7636C /* Assets.xcassets */,
+				87CC410583FA1EE40F7BFB71 /* Main.storyboard */,
+				6EE7813A102C8556363BDF9D /* LaunchScreen.storyboard */,
+			);
+			path = .;
+			sourceTree = "<group>";
+		};
+		3286AF6FAB9A64AF3E22D46A /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				66D453B4D53939118E1F8B8A /* Models */,
+				103320F40787DE4F03C4D4F0 /* ViewControllers */,
+				C80FDEC6F733D2C6DA015DEE /* Views */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		3307D477E401F878A047FB04 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2C0C7D9C188D4F24A1A6F0CE /* SCPlayerStyle.h */,
+				1CC6791BEFFC79B1CA35FF8C /* SCMiniPlayerView.h */,
+				D3A5593549F3C9D0790E8535 /* SCMiniPlayerView.m */,
+				EAFC30E61CF02124C9D3E6D8 /* SCPlayerControlsView.h */,
+				9F27D8286F4ABC21BABC0523 /* SCPlayerControlsView.m */,
+				34494469E14EF2E2E99A3346 /* SCPlayerProgressView.h */,
+				8BCE8CD61BCD4E888CDD2B7D /* SCPlaybackQueueCell.h */,
+				A5B2B31207CB4CE18F8E6554 /* SCPlaybackQueueView.h */,
+				EFDA1920134ADAE929394811 /* SCPlayerProgressView.m */,
+				046B4537A6634431B2CA2A17 /* SCPlaybackQueueCell.m */,
+				98F50375CEFF4DA4A89DD2F6 /* SCPlaybackQueueView.m */,
+				E60D4C52F3F42E9549FBD493 /* SCPlayerView.h */,
+				9DA661F1F7758367300F5CA8 /* SCPlayerView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		46AB77DB3A244BD2B0FFDF23 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9533225439B64580807A88C4 /* SCEditProfileView.h */,
+				F591F8D6867F428194285241 /* SCEditProfileView.m */,
+				085483815BBB4B35A39F3A63 /* SCProfileAvatar.h */,
+				1DFF21C6E9FC48D3B76B478F /* SCProfileAvatar.m */,
+				1A62BB35FD7E429CB578546C /* SCProfileHeader.h */,
+				C0AD5B4039764169A86F970C /* SCProfileHeader.m */,
+				39889298AEB943E0AFF601EA /* SCProfileView.h */,
+				08E363D7E57745BCAB77C808 /* SCProfileView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		47B6AE4EAA074487AD475765 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9E4F885FF53F4B57ABE48B96 /* Licenses */,
+				5B424C069B5E4649BEE1A4FB /* Models */,
+				9B1A48ACC8D1486F871DA189 /* ViewControllers */,
+				EEEA4249A6A541558D920805 /* Views */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		47D66B53CB88F241B6F3E0ED /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				268166F27984CF5799285F4C /* Data */,
+				D395E76D9F29BE25CC34A013 /* Models */,
+				8D7E8AAB0C60887A186624A0 /* ViewControllers */,
+				C8923544F7F563E57F21ABB7 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		594E2DED13033CFB1096AC75 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				F9F43D6CE8CFE18E8ACEF1FE /* Models */,
+				B10CCE040B17F4F386DD0DF4 /* ViewControllers */,
+				89DDE25DD9AC574B9F0E6A6B /* Views */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		5B424C069B5E4649BEE1A4FB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				655D4002C2CA490CB08F3B0F /* SCSettingsItem.h */,
+				D5519E3F778B4FC0A02D935D /* SCSettingsItem.m */,
+				6CCB5902E39F4F8E9AB3E748 /* SCSettingsPreviewState.h */,
+				5DC170782C554A48B67F8EFB /* SCSettingsPreviewState.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5C5CA7B9D08B911317D91759 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFA72FC93DE01EAB5D81BCDB /* SCSidebarItemCell.h */,
+				68388B574821540E6C854855 /* SCSidebarItemCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		66D453B4D53939118E1F8B8A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9AAE21F6A60470DDD2125EC4 /* SCSearchResultModel.h */,
+				F229DB0A8E1242E986EF5471 /* SCSearchDataProvider.h */,
+				42E6E9A83F4B6B4036EC2ACD /* SCSearchResultModel.m */,
+				DB637DBF38534DB69551493F /* SCSearchDataProvider.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6AAF30F86BAADA9BC1953BFC /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				84C67469B96F9F63FFEC703E /* Models */,
+				B31604F545B773A4FEA22EFA /* ViewControllers */,
+				0F07A2807FF44CC58B9D55D9 /* Views */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		6D94D43CD4424A09895E8377 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB2EEA602F744187962042CC /* SCLyricsView.h */,
+				6763A60329294752AF2D0C6D /* SCLyricsView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6D96071D1AC7F51E235CA089 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5F3DD96770603D52F977D27D /* SCPlayerViewController.h */,
+				4BFF1A90AA014D239955F645 /* SCPlaybackQueueViewController.h */,
+				1D81F5B9A0BF3E92569BB50B /* SCPlayerViewController.m */,
+				59169422C5874F6C84853867 /* SCPlaybackQueueViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		72BDB845BDD3342830F86F5E /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				D0E05DFF2C6454D36B351908 /* ViewControllers */,
+				5C5CA7B9D08B911317D91759 /* Views */,
+			);
+			path = Sidebar;
+			sourceTree = "<group>";
+		};
+		75D08D4EE6F4B005E999CBEA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F29ACD7BE7D04748922C1735 /* SCPlaybackSnapshot.h */,
+				DD3C664A3C36C07CB359E6E2 /* SCPlaybackSnapshot.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		766A09929B949F27A8E5CE0F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C73EDC151E00CD153B9AC7DC /* SCRegisterViewController.h */,
+				77060C9E05F3ECA034375123 /* SCRegisterViewController.m */,
+				6B57D285F2D37BFC419AA927 /* SCLoginViewController.h */,
+				B6606B1540BB0591790A116A /* SCLoginViewController.m */,
+				3F25A47A26386729DD14D71C /* SCWelcomeViewController.h */,
+				5249C37D31FFEDEABF149FEB /* SCWelcomeViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		773E056326812C508B12EEB1 /* Artist */ = {
+			isa = PBXGroup;
+			children = (
+				E9E1DC1DAA1CAB305B976678 /* Models */,
+				E6C6FD08320AC2ABA83792E2 /* ViewControllers */,
+				E01548BE1E926343F52A842A /* Views */,
+			);
+			path = Artist;
+			sourceTree = "<group>";
+		};
+		80278E1260561DCD59BEEC64 /* Playlist */ = {
+			isa = PBXGroup;
+			children = (
+				23A80887EFF30F6C0579054F /* Models */,
+				03883B9C6A3F8428707A4747 /* ViewControllers */,
+				E4B5A5434EA0FE35DA6149B5 /* Views */,
+			);
+			path = Playlist;
+			sourceTree = "<group>";
+		};
+		84745A93BEF8819C0DC85A24 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FCCF98B1566F7EAB630A60D5 /* SCRegistrationFormModel.h */,
+				07D5227003D9A2596F848271 /* SCRegistrationFormModel.m */,
+				52902B6AE2357B3354C8DAC7 /* SCAuthFormModel.h */,
+				0E587069F96E60FAF30D8E7A /* SCAuthFormModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84C67469B96F9F63FFEC703E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DFE398C44F8553F2DE823991 /* SCAlbumDetailModel.h */,
+				C345D5DB28CE0C3920FD5AD2 /* SCAlbumDetailModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8750A8BD9279AC92DF5BEFDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3D2503419C566682C043DC6 /* Pods-Spotify.debug.xcconfig */,
+				C7967E2348D9C89F5D17F981 /* Pods-Spotify.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		89DDE25DD9AC574B9F0E6A6B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C002D1C3EFD0B5743E423D3 /* SCLibraryItemCell.h */,
+				E9E4B454B251336F9381928D /* SCLibraryItemCell.m */,
+				E3298E0408F81A24C84E6DBC /* SCLibraryView.h */,
+				CCE87CD2BB6266A32B61DB54 /* SCLibraryView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8CE328C62343B7A0C4ECA50E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C2E428EA4D0307E663F5E88E /* SCFeaturePlaceholderView.h */,
+				B7BAE70D52E250F2BBD460E6 /* SCFeaturePlaceholderView.m */,
+				B5BD3AE3AF823A025EFE3839 /* SCMusicStyle.h */,
+				4B661E22F29A034C59829D13 /* SCAlbumCardView.h */,
+				0074C7D6C443025E914E9D63 /* SCAlbumCardView.m */,
+				99B9A654340AA19CB4CEE0B0 /* SCArtistCardView.h */,
+				990E6EF46315F97E6B1842C8 /* SCArtistCardView.m */,
+				A82D2CB99EFE665EE651A535 /* SCPlaylistCardView.h */,
+				D6F022B0E7D2C99708CEC87C /* SCPlaylistCardView.m */,
+				A2C57C5ADBAB8306FE3DF5BC /* SCTrackCell.h */,
+				3BA95EDD33F04C2A9410DB54 /* SCReleaseControlsCell.h */,
+				9CC1742D6DEB4FCBAD921D25 /* SCNumberedTrackCell.h */,
+				CE2844D4482F42278D8DBD12 /* SCMusicBrowserView.h */,
+				03C8280F2054464EA90F626B /* SCCatalogDetailView.h */,
+				CB087BBB2CB14B91A6651AAC /* SCMusicItemCell.h */,
+				F62E7B815D660B773527E4AB /* SCTrackCell.m */,
+				593C9173B0B4498A9E2FF099 /* SCReleaseControlsCell.m */,
+				ED67B515F92743E7986732A1 /* SCNumberedTrackCell.m */,
+				B3B90FB8A9A64105B15F7772 /* SCMusicBrowserView.m */,
+				40376BC9628A4F8AA9AB904E /* SCCatalogDetailView.m */,
+				22D08DF4915647FD99838072 /* SCMusicItemCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D7E8AAB0C60887A186624A0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				35D2931C7EADE74D1AFE5037 /* SCHomeViewController.h */,
+				008A9820F8C72CC813D800BA /* SCHomeViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9B1A48ACC8D1486F871DA189 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DA1FB063474E448F9871172F /* SCSettingsViewController.h */,
+				58413F89E89F4E57BBCCA479 /* SCSettingsViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9E4F885FF53F4B57ABE48B96 /* Licenses */ = {
+			isa = PBXGroup;
+			children = (
+				4E48E8015A0F4504B87E158F /* AFNetworking-LICENSE.txt */,
+				AC5CA4F7BECC47448E48511D /* LookinServer-LICENSE.txt */,
+				1C58AB7B35BE42F894145762 /* Masonry-LICENSE.txt */,
+				FD47275770384245AEFFDF90 /* YYModel-LICENSE.txt */,
+			);
+			path = Licenses;
+			sourceTree = "<group>";
+		};
+		A037D2232EEE4F0EA6DED657 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				66E32A6849AA406B94A456E0 /* SCEditProfileViewController.h */,
+				82DC30388D974979AB927431 /* SCEditProfileViewController.m */,
+				AA7B65163388415C90CCA4C1 /* SCProfileViewController.h */,
+				F1A99ECB727C41EF9ADCA0BF /* SCProfileViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AC636438CA734B76979D0A0E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B42FB5F5C12A497CAFE4FCDF /* SCLRCParser.h */,
+				5459D638FB3A4EE0BC104D09 /* SCLRCParser.m */,
+				6462294CBB4A4E70AFC73DB5 /* SCLyricsProvider.h */,
+				4602C109138E4770B36CA2C6 /* SCLyricsProvider.m */,
+				C20FE31E3B634472B9F81FE2 /* SCLyricsTimeline.h */,
+				EC2D507F105C461083F97100 /* SCLyricsTimeline.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B10CCE040B17F4F386DD0DF4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6C91FC34C7747BA6077E836F /* SCLibraryViewController.h */,
+				E0C90D09E64E4204B7A577F1 /* SCLibraryOptionsViewController.h */,
+				332CB6A90DA207E680132708 /* SCLibraryViewController.m */,
+				4683FE066FEF491EAE20E0FF /* SCLibraryOptionsViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B31604F545B773A4FEA22EFA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA559B5D031C6D94477B6B57 /* SCAlbumDetailViewController.h */,
+				1AF17EA3A21FAECDD4C3DD28 /* SCAlbumDetailViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BBE949898855600876881B0A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C5FEA6942B97BD5132EE1DB7 /* SCRegisterView.h */,
+				FFC0FC70F03226F60CE45010 /* SCRegisterView.m */,
+				9682451382B7333633DCF069 /* SCVerificationCodeInputView.h */,
+				D052A727915C40525D91300B /* SCVerificationCodeInputView.m */,
+				148F678F9BD7BBB106BCCD90 /* SCAuthTextFieldView.h */,
+				0CDBDE80E731D4D550E454C5 /* SCAuthTextFieldView.m */,
+				B1AFE6144FD1A87496E0111A /* SCLoginView.h */,
+				0FE902F6B74299B7E0858714 /* SCLoginView.m */,
+				E3A710BB54A6B8BEF0E5284E /* SCWelcomeView.h */,
+				614FB418D538E6357858C1B7 /* SCWelcomeView.m */,
+				BA5178A49F60DC27A4CA08F6 /* SCAuthStyle.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BFDD17C1102346D689706496 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA0721F012A4460FB77F036C /* SCLyricsViewController.h */,
+				2ABCAE61DF84439089174EDC /* SCLyricsViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C240EDB10E9628DED760D7BE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D5E58C1A89919064FD7F05CF /* Models */,
+				228D424F3DBE2C2AFE566D45 /* ViewControllers */,
+				8CE328C62343B7A0C4ECA50E /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C80FDEC6F733D2C6DA015DEE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFB5662B357C68BF03978A62 /* SCCategoryCell.h */,
+				F7BDA7131A97207BE4CB79B2 /* SCCategoryCell.m */,
+				356B579B605CC1AD89DA8E25 /* SCSearchResultCell.h */,
+				FD27A69CE8649D93D6158E81 /* SCSearchResultCell.m */,
+				71D90D9F4198B7ECD54DC9F5 /* SCSearchView.h */,
+				46F98AF39D8240BCBBF56E7D /* SCSearchView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C8923544F7F563E57F21ABB7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C06D90717E49586272C10256 /* SCHomeSectionHeaderView.h */,
+				1D1BC337BB71C657F604CB01 /* SCHomeSectionHeaderView.m */,
+				69A1430EF3BC5E4A1FD5B14F /* SCHomeShortcutCell.h */,
+				D385A070A8C7279C2EBBE0F2 /* SCHomeShortcutCell.m */,
+				14F15868FE17A4D02B07F28C /* SCHomeHeaderView.h */,
+				41056A122554A25B0F52F8C2 /* SCHomeHeaderView.m */,
+				7555101041879081B7DAFC83 /* SCHomePlaylistCell.h */,
+				43E1A29E78EBE53C3F326AF6 /* SCHomePlaylistCell.m */,
+				FF646192F87BF9CF25AB01F7 /* SCHomeView.h */,
+				E96FED974A6E6624C2725F9C /* SCHomeView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE8856E908A44242B45C2A40 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E571B9401CFC45308D460C0A /* SCPlaybackManager.h */,
+				2CA7E2A5635B4639B6C4552E /* SCPlaybackManager.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D0E05DFF2C6454D36B351908 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A0C1982FAE068F82E706F6E6 /* SCRootContainerViewController.h */,
+				6FC2719EB2DFFF033B354A9A /* SCRootContainerViewController.m */,
+				C59CDB0FED33B09A618C75F7 /* SCSidebarViewController.h */,
+				B508F26C909E4234AB56028E /* SCSidebarViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D214A11ABAE14710A427B626 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				46D522A681F64B959B5A9172 /* local-track-0-translation.lrc */,
+				3CDB5DBFA8174837B013E3B0 /* local-track-0.lrc */,
+				A257F0A8F6B74CC6BAA01E54 /* local-track-1.lrc */,
+				D51BD67B4A4B4926AD73BF9D /* local-track-2.lrc */,
+				0D173AFB0A1D47F78465D7D9 /* local-track-3.lrc */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D395E76D9F29BE25CC34A013 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				34CCED529E8F497DF7BC5886 /* SCHomeSectionModel.h */,
+				861D82BAA43DF2F31E485E1D /* SCHomeSectionModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D5E58C1A89919064FD7F05CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				47DC986C6322A9CCFD5F38D6 /* SCMusicItem.h */,
+				2A3F5BC43A99817F7B052E05 /* SCAlbum.h */,
+				551C25057D5F50A187CA2571 /* SCAlbum.m */,
+				B59121D761E22B36CEE2E151 /* SCArtist.h */,
+				D4C69E414AB6D42577E05A47 /* SCArtist.m */,
+				2924A877F571E17FCD51964C /* SCPlaylist.h */,
+				3F43B804112E4A3EA5764729 /* SCLocalMusicCatalog.h */,
+				657CFD958C4091E8167310B0 /* SCPlaylist.m */,
+				D275A9B7807B46BDB17B3172 /* SCLocalMusicCatalog.m */,
+				B07888E40951FF47D4439249 /* SCTrack.h */,
+				A754120C88089E3FF7F33F62 /* SCTrack.m */,
+				57150AD51ABA14CEEE109441 /* SCUser.h */,
+				219F2DE1BB8D26370008A2CD /* SCUser.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DDB793C209DF403295FC176C /* Lyrics */ = {
+			isa = PBXGroup;
+			children = (
+				23A09E0A7C234B6A8CBD8845 /* Models */,
+				D214A11ABAE14710A427B626 /* Resources */,
+				AC636438CA734B76979D0A0E /* Services */,
+				BFDD17C1102346D689706496 /* ViewControllers */,
+				6D94D43CD4424A09895E8377 /* Views */,
+			);
+			path = Lyrics;
+			sourceTree = "<group>";
+		};
+		E01548BE1E926343F52A842A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2F06BFACD4A984C0CEEDF0BC /* SCArtistDetailView.h */,
+				FDF6E97394D5A1A63EC3E835 /* SCArtistDetailView.m */,
+				9AEA0D62AB1470DB41EC2373 /* SCArtistHeaderView.h */,
+				D984A52292399F30A2C8EEBC /* SCArtistHeaderView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E4B5A5434EA0FE35DA6149B5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5006980435A724C460F7E68A /* SCPlaylistDetailView.h */,
+				ED06617674FBBCD746493B32 /* SCPlaylistDetailView.m */,
+				31218B6DB6B785E6DCA4BD62 /* SCPlaylistHeaderView.h */,
+				74EFF4B9CEF54984261AA8D3 /* SCPlaylistHeaderView.m */,
+				C9E048EFE170FA1D83ECF633 /* SCPlaylistTrackCell.h */,
+				FDB39DC9A71A1D9CBCEAA6FD /* SCPlaylistTrackCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E6C6FD08320AC2ABA83792E2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B8097758243E3C73FB2A6F5E /* SCArtistDetailViewController.h */,
+				7CDD8767834BE1FC8F224D6F /* SCArtistDetailViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E9E1DC1DAA1CAB305B976678 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				290D5DE4317ABCBE90BE74AF /* SCArtistDetailModel.h */,
+				AC5D8481439E32AD90843DC6 /* SCArtistDetailModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EEEA4249A6A541558D920805 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A514FEDB95264C17AEA00C44 /* SCSettingsCell.h */,
+				E4E51D6BDA824501B0C52092 /* SCSettingsCell.m */,
+				8E562F4E7DE541D08CA8FACA /* SCSettingsView.h */,
+				4FE9D6DE31BD4A8A8FB9C0B7 /* SCSettingsView.m */,
+				D4FE0F7B6F574389B6A25D48 /* SCStorageUsageView.h */,
+				E8CED4D5938645D4BDCDB08D /* SCStorageUsageView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F387CBBB176546049DD7F2A5 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A037D2232EEE4F0EA6DED657 /* ViewControllers */,
+				46AB77DB3A244BD2B0FFDF23 /* Views */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		F54F80E750ED2CFD078D9632 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				84745A93BEF8819C0DC85A24 /* Models */,
+				766A09929B949F27A8E5CE0F /* ViewControllers */,
+				BBE949898855600876881B0A /* Views */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		F9F43D6CE8CFE18E8ACEF1FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				81801064372F6817A3BFA310 /* SCLibraryItemModel.h */,
+				4BCA79D093564738A34CB123 /* SCLibraryStore.h */,
+				5DA8CBE6378D355496AD9DB6 /* SCLibraryItemModel.m */,
+				BBC8C1B5BC0548F69E892226 /* SCLibraryStore.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34A04005BCAF206EEC990BD9 /* Spotify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B672BF3DA427763BF644BE3 /* Build configuration list for PBXNativeTarget "Spotify" */;
+			buildPhases = (
+				5539EA3E7A014C40F54BB3E2 /* [CP] Check Pods Manifest.lock */,
+				878A52FC5FF6A57D50B7B870 /* Sources */,
+				E2AA269EB967A8853A258BFA /* Frameworks */,
+				41D311A605520FC7B8B9A980 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D01038EF30B7109A00CE7582 /* Core */,
+			);
+			name = Spotify;
+			productName = Spotify;
+			productReference = A8792157CB4F27FB949C035F /* Spotify.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		244210E48437B6556980A702 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2620;
+			};
+			buildConfigurationList = 76F8DEC3DFE0BDB465198890 /* Build configuration list for PBXProject "Spotify" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D6E4079E36703EBD37C0072;
+			productRefGroup = 0A3E27B8CA818264D75C8D81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34A04005BCAF206EEC990BD9 /* Spotify */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41D311A605520FC7B8B9A980 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87D5D311D6987D3FAC575705 /* Assets.xcassets in Resources */,
+				FED9F660458B433E936E4209 /* local-track-3.lrc in Resources */,
+				816E656276E346B2A0575D93 /* local-track-2.lrc in Resources */,
+				3A609A2037A94F88952C5BD0 /* local-track-1.lrc in Resources */,
+				05EED0B17D2F44A592674249 /* local-track-0.lrc in Resources */,
+				E235739D7D66420E946CD2D0 /* local-track-0-translation.lrc in Resources */,
+				3FC2BFF99D854E4B9E7FAE2F /* YYModel-LICENSE.txt in Resources */,
+				B9B6E8CBBFC84C66B1428265 /* Masonry-LICENSE.txt in Resources */,
+				B27DB1DB43794CEAAFC4E243 /* LookinServer-LICENSE.txt in Resources */,
+				BA33EF69C5BA4272807C0A68 /* AFNetworking-LICENSE.txt in Resources */,
+				083E922E3B154F97410FDD98 /* Main.storyboard in Resources */,
+				E6FC3020C8A34F6BFE974C78 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5539EA3E7A014C40F54BB3E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spotify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		878A52FC5FF6A57D50B7B870 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A725625E44D89D640632975D /* SCFeaturePlaceholderView.m in Sources */,
+				BC297864501F06DA2C8A65B7 /* SCHomeDataProvider.m in Sources */,
+				D8964F80E56EF1C46DCD5C6E /* SCHomeSectionHeaderView.m in Sources */,
+				2F3ADC8973C4C345272E2818 /* SCHomeShortcutCell.m in Sources */,
+				BD29A3E2806F6439D8226684 /* SCRegistrationFormModel.m in Sources */,
+				072798300864F46955987449 /* SCRegisterView.m in Sources */,
+				34B7B377A71CCFB9B640B696 /* SCVerificationCodeInputView.m in Sources */,
+				C5361C5DE36CE9E594F62E76 /* SCRegisterViewController.m in Sources */,
+				4FDBDE266B01254771C8F1B3 /* SCAlbumDetailModel.m in Sources */,
+				0080B603BF314C7C3EDA5493 /* SCAlbumDetailViewController.m in Sources */,
+				325DEF09E22DC9C1BC3B20E2 /* SCAlbumDetailView.m in Sources */,
+				F70A22C114A283319DD3D7A5 /* SCAlbumHeaderView.m in Sources */,
+				A34683B0E6AFCEDD8CBFBAA5 /* SCArtistDetailModel.m in Sources */,
+				2362020803F0BCAFC234B576 /* SCArtistDetailViewController.m in Sources */,
+				725E22B2178E3E2DB91558EA /* SCArtistDetailView.m in Sources */,
+				A94C60371404EDF41D47D0BB /* SCArtistHeaderView.m in Sources */,
+				228917731451249EE05F73F9 /* SCAuthFormModel.m in Sources */,
+				681FD02AA3C2F76FC854E8F2 /* SCLoginViewController.m in Sources */,
+				6240FE79D146C327816AA624 /* SCWelcomeViewController.m in Sources */,
+				ADB0F2270F1048D9FE02A948 /* SCAuthTextFieldView.m in Sources */,
+				6CEDAE5CFDCC09A85AD4A36A /* SCLoginView.m in Sources */,
+				4FE5B44B175B953320246B4B /* SCWelcomeView.m in Sources */,
+				122C72CC9486C9B58E372075 /* SCAlbum.m in Sources */,
+				43F6187199F1C22941BC29A2 /* SCArtist.m in Sources */,
+				B2D09DDC670F7382EFD8A259 /* SCPlaylist.m in Sources */,
+				66DF1B4AE3CB4C54A5A0BFC8 /* SCLocalMusicCatalog.m in Sources */,
+				BA71B63FCB1B12B07803CCC7 /* SCTrack.m in Sources */,
+				8B61FF6EB7A41279DA4D9E20 /* SCUser.m in Sources */,
+				1C1A6D66C5EC9EA820076E08 /* SCMainTabBarController.m in Sources */,
+				E835887FB58F4519A8E2D231 /* SCLyricsView.m in Sources */,
+				F7069D768A34442197EB60A6 /* SCLyricsViewController.m in Sources */,
+				C7DC371680CA4DC198C1CF6E /* SCLyricsTimeline.m in Sources */,
+				29FD4AE5DF184B2D92EFB0C9 /* SCLyricsProvider.m in Sources */,
+				3DBFD68AEA8742808E0D15FF /* SCLRCParser.m in Sources */,
+				C725B88C6E8C40688EA5731E /* SCLyricsModel.m in Sources */,
+				BBA15BCE0A5B44D7A00345D0 /* SCStorageUsageView.m in Sources */,
+				3704150693764FD6B624B911 /* SCSettingsView.m in Sources */,
+				65322F67F4AB4A86BB47025C /* SCSettingsCell.m in Sources */,
+				A05E9191F40744A59AA9C68A /* SCSettingsViewController.m in Sources */,
+				5ED55A24174543F6BE405687 /* SCSettingsPreviewState.m in Sources */,
+				2A8C6ACA8F7245FB9AA1DD99 /* SCSettingsItem.m in Sources */,
+				7B46430D5F094CD59E77F02C /* SCProfileView.m in Sources */,
+				11553E4812F74173BB65A2F4 /* SCProfileHeader.m in Sources */,
+				8FE7299DE66645E2A0B8194A /* SCProfileAvatar.m in Sources */,
+				6497BACDEA1740D0B5F14A6F /* SCEditProfileView.m in Sources */,
+				89115E00DB4A493991314FB0 /* SCProfileViewController.m in Sources */,
+				7386C24656C6457A83B0B0DB /* SCEditProfileViewController.m in Sources */,
+				1A56DC33FB80C86314A05907 /* SCRootContainerViewController.m in Sources */,
+				0818E83679C6513971DE664D /* SCSidebarViewController.m in Sources */,
+				80D488C3922EE845E9F7785E /* SCSidebarItemCell.m in Sources */,
+				A5C11435A00D451E85C838CE /* SCCatalogDetailViewController.m in Sources */,
+				779A6B6F0517443F80C75086 /* SCMusicNavigation.m in Sources */,
+				9B531344CE1E5225EB47CE1C /* SCAlbumCardView.m in Sources */,
+				1803791DB2C855933960E202 /* SCArtistCardView.m in Sources */,
+				CCA2CD57A3E7347F14F17862 /* SCPlaylistCardView.m in Sources */,
+				6A126A6A8D527058199C96A4 /* SCTrackCell.m in Sources */,
+				B6146B80884D4D62A3A18BD6 /* SCReleaseControlsCell.m in Sources */,
+				AA34E430CB53463BA332C012 /* SCNumberedTrackCell.m in Sources */,
+				8816BC0A1CF940E09FE15E71 /* SCMusicBrowserView.m in Sources */,
+				A031B07B88F74B749C87DB2D /* SCCatalogDetailView.m in Sources */,
+				1705502C1E12489E850109D3 /* SCMusicItemCell.m in Sources */,
+				792DEF4B4AA18458393724FA /* SCHomeSectionModel.m in Sources */,
+				4C4BA2A99A554F67E09360BE /* SCHomeViewController.m in Sources */,
+				FBF0D7BB14DAE959FBBC1873 /* SCHomeHeaderView.m in Sources */,
+				33D4AC1068EEFE997F36CB8A /* SCHomePlaylistCell.m in Sources */,
+				2FF056DC8BB2BB09AFB5174C /* SCHomeView.m in Sources */,
+				0ADFAAA8C0C83B64F7A0DC79 /* SCLibraryItemModel.m in Sources */,
+				8BF3CEFFE8574D3BA3624A28 /* SCLibraryStore.m in Sources */,
+				4E2D4C6CA13A122B18F9636C /* SCLibraryViewController.m in Sources */,
+				9913561E1BD348F99BCAA7C1 /* SCLibraryOptionsViewController.m in Sources */,
+				9F67B57E5A9979158D347123 /* SCLibraryItemCell.m in Sources */,
+				CFB1A666D1C337AACE2612BB /* SCLibraryView.m in Sources */,
+				A858E4151706407DBD869F31 /* SCPlaybackManager.m in Sources */,
+				992A52E2150FFA742AF8D661 /* SCPlaybackSnapshot.m in Sources */,
+				14CC66B5235A5D99DA68DB0D /* SCPlayerViewController.m in Sources */,
+				049F6232D612452488D276A0 /* SCPlaybackQueueViewController.m in Sources */,
+				36635944A53A4CB94EC2B144 /* SCMiniPlayerView.m in Sources */,
+				0E117D7826A4A5F5B48801A1 /* SCPlayerControlsView.m in Sources */,
+				CC93A9D47F5015AB3EE378B0 /* SCPlayerProgressView.m in Sources */,
+				F4FB81816AAC4888915B1B6F /* SCPlaybackQueueCell.m in Sources */,
+				8F30C36E07C34DDE87BAF2DD /* SCPlaybackQueueView.m in Sources */,
+				36DDE64D2E3A4C9391658A5A /* SCPlayerView.m in Sources */,
+				E3C35359B2184436A5C3768A /* SCPlaylistDetailModel.m in Sources */,
+				74F7F90FD495AF25BEC55C8A /* SCPlaylistDetailViewController.m in Sources */,
+				0EDD66CFD92822F8323CF0A3 /* SCPlaylistDetailView.m in Sources */,
+				67B55ED64535189182D7F5CC /* SCPlaylistHeaderView.m in Sources */,
+				FCDE56177D990D6F654E05CB /* SCPlaylistTrackCell.m in Sources */,
+				99589E9375B3AE4F23BCC1FC /* SCSearchResultModel.m in Sources */,
+				F1114FE825A54D81A056B30A /* SCSearchDataProvider.m in Sources */,
+				FB67720D54C659F4886B6799 /* SCSearchViewController.m in Sources */,
+				9B7E2F05D77D0A6564C014C9 /* SCCategoryCell.m in Sources */,
+				4B3061A3ECE492D4915CE313 /* SCSearchResultCell.m in Sources */,
+				D904BEFCEBB4972E8B64E67F /* SCSearchView.m in Sources */,
+				3A38D7BECBC4CFF72FA6B1C1 /* AppDelegate.m in Sources */,
+				EEE44BD5CE3DF7E83CDDB5F3 /* SceneDelegate.m in Sources */,
+				DBF79A73E573C0FBE70AB822 /* ViewController.m in Sources */,
+				58CF6CA8CAB48257AE3A3799 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6EE7813A102C8556363BDF9D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75047E2E23F63380D8A0A1DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		87CC410583FA1EE40F7BFB71 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF8C2843BB8A2E21AF671408 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07CA1E69F6068DEA30A4DA6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_OPTIMIZATION_LEVEL = s;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		2B23A31EEC75B029432F2445 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		594BCDCC96599D88EF772A08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7967E2348D9C89F5D17F981 /* Pods-Spotify.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3QCCCKU4RA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Spotify;
+				INFOPLIST_KEY_LSRequiresIPhoneOS = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scstudy.spotifyclone.app97da8d841631;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EDDA600A3F771F810A8065C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3D2503419C566682C043DC6 /* Pods-Spotify.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3QCCCKU4RA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Spotify;
+				INFOPLIST_KEY_LSRequiresIPhoneOS = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scstudy.spotifyclone.app97da8d841631;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B672BF3DA427763BF644BE3 /* Build configuration list for PBXNativeTarget "Spotify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDDA600A3F771F810A8065C9 /* Debug */,
+				594BCDCC96599D88EF772A08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76F8DEC3DFE0BDB465198890 /* Build configuration list for PBXProject "Spotify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B23A31EEC75B029432F2445 /* Debug */,
+				07CA1E69F6068DEA30A4DA6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 244210E48437B6556980A702 /* Project object */;
+}
