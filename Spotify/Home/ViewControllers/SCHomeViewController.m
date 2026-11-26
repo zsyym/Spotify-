@@ -11,8 +11,18 @@
 #import "SCPlaylist.h"
 #import "SCPlaylistDetailViewController.h"
 
+typedef NS_ENUM(NSInteger, SCHomeRecommendationState) {
+    SCHomeRecommendationIdle,
+    SCHomeRecommendationLoading,
+    SCHomeRecommendationSuccess,
+    SCHomeRecommendationEmpty,
+    SCHomeRecommendationError,
+    SCHomeRecommendationRefreshing,
+};
+
 @interface SCHomeViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
+@property (nonatomic, assign) SCHomeRecommendationState recommendationState;
 @property (nonatomic, strong) SCHomeView *homeView;
 @property (nonatomic, strong) id<SCHomeDataProviding> dataProvider;
 @property (nonatomic, copy) NSArray<SCHomeSectionModel *> *sections;
@@ -48,19 +58,17 @@
     self.homeView.headerView.profileAction = ^{
         [SCRootContainerViewController openSidebarFrom:weakSelf];
     };
-    [self.dataProvider loadSectionsWithCompletion:^(NSArray<SCHomeSectionModel *> *sections, NSError *error) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            __strong typeof(weakSelf) self = weakSelf;
-            if (!self)
-                return;
-            if (error) {
-                [self showNotice:@"Couldn’t load the local preview" message:error.localizedDescription];
-                return;
-            }
-            self.sections = [sections copy];
-            [self.homeView showSections:self.sections];
-        });
-    }];
+    self.sections = [SCHomeDataProvider sectionsWithRecommendedPlaylists:@[]];
+    [self.homeView showSections:self.sections];
+    [self.homeView.collectionView.refreshControl addTarget:self
+                                                    action:@selector(loadRecommendations)
+                                          forControlEvents:UIControlEventValueChanged];
+    [self loadRecommendations];
+}
+
+- (void)dealloc {
+    if ([_dataProvider respondsToSelector:@selector(cancelLoading)])
+        [_dataProvider cancelLoading];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -108,7 +116,7 @@
     SCHomeSectionHeaderView *header = [collectionView dequeueReusableSupplementaryViewOfKind:kind
                                                                          withReuseIdentifier:@"title"
                                                                                 forIndexPath:indexPath];
-    [header configureTitle:self.sections[indexPath.section].title];
+    [self configureHeader:header atIndex:indexPath.section];
     return header;
 }
 
@@ -135,14 +143,77 @@
 
 #pragma mark - Private Methods
 
-- (void)showNotice:(NSString *)title message:(NSString *)message {
-    if (self.presentedViewController)
+- (void)loadRecommendations {
+    if (self.recommendationState == SCHomeRecommendationLoading ||
+        self.recommendationState == SCHomeRecommendationRefreshing)
         return;
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:title
-                                                                   message:message
-                                                            preferredStyle:UIAlertControllerStyleAlert];
-    [alert addAction:[UIAlertAction actionWithTitle:@"Got it" style:UIAlertActionStyleDefault handler:nil]];
-    [self presentViewController:alert animated:YES completion:nil];
+    SCHomeRecommendationState previous = self.recommendationState;
+    self.recommendationState =
+        previous == SCHomeRecommendationIdle ? SCHomeRecommendationLoading : SCHomeRecommendationRefreshing;
+    [self updateRecommendationHeader];
+    __weak typeof(self) weakSelf = self;
+    [self.dataProvider loadSectionsWithCompletion:^(NSArray<SCHomeSectionModel *> *sections, NSError *error) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            __strong typeof(weakSelf) self = weakSelf;
+            if (!self)
+                return;
+            [self.homeView.collectionView.refreshControl endRefreshing];
+            if (error) {
+                self.recommendationState =
+                    ([error.domain isEqual:NSURLErrorDomain] && error.code == NSURLErrorCancelled)
+                        ? previous
+                        : SCHomeRecommendationError;
+                [self updateRecommendationHeader];
+                return;
+            }
+            self.sections = [sections copy];
+            self.recommendationState =
+                sections.lastObject.items.count ? SCHomeRecommendationSuccess : SCHomeRecommendationEmpty;
+            [self.homeView showSections:self.sections];
+        });
+    }];
+}
+
+- (void)updateRecommendationHeader {
+    if (!self.sections.count)
+        return;
+    NSIndexPath *path = [NSIndexPath indexPathForItem:0 inSection:self.sections.count - 1];
+    SCHomeSectionHeaderView *header =
+        (id)[self.homeView.collectionView supplementaryViewForElementKind:UICollectionElementKindSectionHeader
+                                                              atIndexPath:path];
+    [self configureHeader:header atIndex:path.section];
+    [self.homeView.collectionView.collectionViewLayout invalidateLayout];
+}
+
+- (void)configureHeader:(SCHomeSectionHeaderView *)header atIndex:(NSInteger)index {
+    BOOL recommendation = index == (NSInteger)self.sections.count - 1;
+    NSString *message = nil;
+    BOOL retry = NO;
+    if (recommendation) {
+        switch (self.recommendationState) {
+            case SCHomeRecommendationLoading:
+                message = @"Loading recommendations…";
+                break;
+            case SCHomeRecommendationRefreshing:
+                message = @"Refreshing recommendations…";
+                break;
+            case SCHomeRecommendationEmpty:
+                message = @"No recommendations available today.";
+                break;
+            case SCHomeRecommendationError:
+                message = self.sections.lastObject.items.count ? @"Couldn’t refresh. Showing previous recommendations."
+                                                               : @"Couldn’t load recommendations.";
+                retry = YES;
+                break;
+            default:
+                break;
+        }
+    }
+    __weak typeof(self) weakSelf = self;
+    header.retryAction = ^{
+        [weakSelf loadRecommendations];
+    };
+    [header configureTitle:self.sections[index].title message:message allowsRetry:retry];
 }
 
 @end

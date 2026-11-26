@@ -41,6 +41,13 @@
 
 #pragma mark - Public Methods
 
+- (void)showStatus:(NSString *)title actionable:(BOOL)actionable {
+    [self.statusButton setTitle:title forState:UIControlStateNormal];
+    self.statusButton.hidden = !title;
+    self.statusButton.enabled = actionable;
+    [self.statusButton mas_updateConstraints:^(MASConstraintMaker *make) { make.height.mas_equalTo(title ? 44 : 0); }];
+}
+
 - (void)setPlaylistTitle:(NSString *)title {
     self.navigationTitle.text = title;
 }
@@ -100,6 +107,11 @@
         forSupplementaryViewOfKind:UICollectionElementKindSectionHeader
                withReuseIdentifier:NSStringFromClass(SCPlaylistHeaderView.class)];
     [self addSubview:_collectionView];
+    _statusButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    _statusButton.tintColor = SCMusicColor(SCColorBrand);
+    [_statusButton setTitleColor:SCMusicColor(SCColorSecondaryText) forState:UIControlStateDisabled];
+    _statusButton.hidden = YES;
+    [self addSubview:_statusButton];
     self.barBackground = [UIView new];
     self.barBackground.backgroundColor = SCMusicColor(SCColorSurface);
     self.barBackground.userInteractionEnabled = NO;
@@ -135,11 +147,16 @@
         make.top.leading.trailing.equalTo(self);
         make.bottom.equalTo(self.backButton);
     }];
+    [self.statusButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.leading.trailing.equalTo(self);
+        make.bottom.equalTo(self.mas_safeAreaLayoutGuideBottom);
+        make.height.mas_equalTo(0);
+    }];
     [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.backButton.mas_bottom);
         make.left.equalTo(self.mas_safeAreaLayoutGuideLeft);
         make.right.equalTo(self.mas_safeAreaLayoutGuideRight);
-        make.bottom.equalTo(self.mas_safeAreaLayoutGuideBottom);
+        make.bottom.equalTo(self.statusButton.mas_top);
     }];
 }
 

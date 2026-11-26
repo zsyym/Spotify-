@@ -20,6 +20,11 @@
     return self;
 }
 
+- (void)prepareForReuse {
+    [super prepareForReuse];
+    [self.cardView cancelArtworkLoad];
+}
+
 #pragma mark - Public Methods
 
 - (void)configureWithItem:(id<SCMusicItem>)item album:(BOOL)album {

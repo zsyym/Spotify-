@@ -3,6 +3,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class SCAlbum;
+
 @interface SCTrack : NSObject <SCMusicItem>
 
 @property (nonatomic, copy) NSString *identifier;
@@ -11,6 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *subtitle;
 @property (nonatomic, copy) NSString *artworkName;
 @property (nonatomic, strong, nullable) SCArtist *artist;
+@property (nonatomic, copy) NSArray<SCArtist *> *artists;
+@property (nonatomic, strong, nullable) SCAlbum *album;
+@property (nonatomic, copy, nullable) NSURL *artworkURL;
 @property (nonatomic, assign) NSTimeInterval duration;
 
 @end

@@ -95,18 +95,21 @@
 		BA71B63FCB1B12B07803CCC7 /* SCTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = A754120C88089E3FF7F33F62 /* SCTrack.m */; };
 		BBA15BCE0A5B44D7A00345D0 /* SCStorageUsageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CED4D5938645D4BDCDB08D /* SCStorageUsageView.m */; };
 		BC297864501F06DA2C8A65B7 /* SCHomeDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9541DA880C37D2E6E7AE28C0 /* SCHomeDataProvider.m */; };
+		CC59D36426574754BD20D12E /* SCRemoteHomeProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2016A7676BC74AB29633BE5C /* SCRemoteHomeProvider.m */; };
 		BD29A3E2806F6439D8226684 /* SCRegistrationFormModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D5227003D9A2596F848271 /* SCRegistrationFormModel.m */; };
 		C5361C5DE36CE9E594F62E76 /* SCRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77060C9E05F3ECA034375123 /* SCRegisterViewController.m */; };
 		C725B88C6E8C40688EA5731E /* SCLyricsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E404BBAAE814C73ABB4E44D /* SCLyricsModel.m */; };
 		C7DC371680CA4DC198C1CF6E /* SCLyricsTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = EC2D507F105C461083F97100 /* SCLyricsTimeline.m */; };
 		CC93A9D47F5015AB3EE378B0 /* SCPlayerProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDA1920134ADAE929394811 /* SCPlayerProgressView.m */; };
 		CCA2CD57A3E7347F14F17862 /* SCPlaylistCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F022B0E7D2C99708CEC87C /* SCPlaylistCardView.m */; };
+		9AA86422ACCB427E940D192C /* SCArtworkImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB84A1B37F94A4A87644E00 /* SCArtworkImageView.m */; };
 		CFB1A666D1C337AACE2612BB /* SCLibraryView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE87CD2BB6266A32B61DB54 /* SCLibraryView.m */; };
 		D8964F80E56EF1C46DCD5C6E /* SCHomeSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D1BC337BB71C657F604CB01 /* SCHomeSectionHeaderView.m */; };
 		D904BEFCEBB4972E8B64E67F /* SCSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F98AF39D8240BCBBF56E7D /* SCSearchView.m */; };
 		DBF79A73E573C0FBE70AB822 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83B32D00D09A0C015506EB6 /* ViewController.m */; };
 		E235739D7D66420E946CD2D0 /* local-track-0-translation.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 46D522A681F64B959B5A9172 /* local-track-0-translation.lrc */; };
 		E3C35359B2184436A5C3768A /* SCPlaylistDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E9433240CAEA20DC074ED5 /* SCPlaylistDetailModel.m */; };
+		20F5E94E47074CF99AA6241C /* SCPlaylistDetailProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = F816BFE694DD4E8A8C794D98 /* SCPlaylistDetailProvider.m */; };
 		E6FC3020C8A34F6BFE974C78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EE7813A102C8556363BDF9D /* LaunchScreen.storyboard */; };
 		E835887FB58F4519A8E2D231 /* SCLyricsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6763A60329294752AF2D0C6D /* SCLyricsView.m */; };
 		EEE44BD5CE3DF7E83CDDB5F3 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 488516FA6F77C8EFE85796B2 /* SceneDelegate.m */; };
@@ -136,6 +139,7 @@
 		148F678F9BD7BBB106BCCD90 /* SCAuthTextFieldView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAuthTextFieldView.h; sourceTree = "<group>"; };
 		14F15868FE17A4D02B07F28C /* SCHomeHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHomeHeaderView.h; sourceTree = "<group>"; };
 		177385013A76E0A187C578FF /* SCHomeDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCHomeDataProvider.h; sourceTree = "<group>"; };
+		1EDB405479C842E9AD9632B5 /* SCRemoteHomeProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCRemoteHomeProvider.h; sourceTree = "<group>"; };
 		1A62BB35FD7E429CB578546C /* SCProfileHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCProfileHeader.h; sourceTree = "<group>"; };
 		1AF17EA3A21FAECDD4C3DD28 /* SCAlbumDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAlbumDetailViewController.m; sourceTree = "<group>"; };
 		1BDD4C929BDF40E0952532CF /* SCMusicNavigation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMusicNavigation.h; sourceTree = "<group>"; };
@@ -227,6 +231,7 @@
 		8E562F4E7DE541D08CA8FACA /* SCSettingsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSettingsView.h; sourceTree = "<group>"; };
 		9533225439B64580807A88C4 /* SCEditProfileView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCEditProfileView.h; sourceTree = "<group>"; };
 		9541DA880C37D2E6E7AE28C0 /* SCHomeDataProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCHomeDataProvider.m; sourceTree = "<group>"; };
+		2016A7676BC74AB29633BE5C /* SCRemoteHomeProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCRemoteHomeProvider.m; sourceTree = "<group>"; };
 		9682451382B7333633DCF069 /* SCVerificationCodeInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCVerificationCodeInputView.h; sourceTree = "<group>"; };
 		98F50375CEFF4DA4A89DD2F6 /* SCPlaybackQueueView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCPlaybackQueueView.m; sourceTree = "<group>"; };
 		990E6EF46315F97E6B1842C8 /* SCArtistCardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCArtistCardView.m; sourceTree = "<group>"; };
@@ -246,8 +251,10 @@
 		A58AA964D5CD21E625987BE7 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		A5B2B31207CB4CE18F8E6554 /* SCPlaybackQueueView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPlaybackQueueView.h; sourceTree = "<group>"; };
 		A6E9433240CAEA20DC074ED5 /* SCPlaylistDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCPlaylistDetailModel.m; sourceTree = "<group>"; };
+		F816BFE694DD4E8A8C794D98 /* SCPlaylistDetailProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCPlaylistDetailProvider.m; sourceTree = "<group>"; };
 		A754120C88089E3FF7F33F62 /* SCTrack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCTrack.m; sourceTree = "<group>"; };
 		A82D2CB99EFE665EE651A535 /* SCPlaylistCardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPlaylistCardView.h; sourceTree = "<group>"; };
+		8F21FD4472054BB4B0EDEDED /* SCArtworkImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCArtworkImageView.h; sourceTree = "<group>"; };
 		A8792157CB4F27FB949C035F /* Spotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7B65163388415C90CCA4C1 /* SCProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCProfileViewController.h; sourceTree = "<group>"; };
 		AB2EEA602F744187962042CC /* SCLyricsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCLyricsView.h; sourceTree = "<group>"; };
@@ -282,6 +289,7 @@
 		CCA5B1C47C850FBA67B63C5E /* SCSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSearchViewController.m; sourceTree = "<group>"; };
 		CCE87CD2BB6266A32B61DB54 /* SCLibraryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCLibraryView.m; sourceTree = "<group>"; };
 		CD16BCE7634E4EA3EF76FA91 /* SCPlaylistDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPlaylistDetailModel.h; sourceTree = "<group>"; };
+		790230D00BE74B87B59ED90C /* SCPlaylistDetailProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCPlaylistDetailProvider.h; sourceTree = "<group>"; };
 		CE2844D4482F42278D8DBD12 /* SCMusicBrowserView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMusicBrowserView.h; sourceTree = "<group>"; };
 		CFA72FC93DE01EAB5D81BCDB /* SCSidebarItemCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SCSidebarItemCell.h; sourceTree = "<group>"; };
 		CFB5662B357C68BF03978A62 /* SCCategoryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCategoryCell.h; sourceTree = "<group>"; };
@@ -297,6 +305,7 @@
 		D5519E3F778B4FC0A02D935D /* SCSettingsItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSettingsItem.m; sourceTree = "<group>"; };
 		D6D837E757934993B3C73334 /* SCLyricsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCLyricsModel.h; sourceTree = "<group>"; };
 		D6F022B0E7D2C99708CEC87C /* SCPlaylistCardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCPlaylistCardView.m; sourceTree = "<group>"; };
+		CDB84A1B37F94A4A87644E00 /* SCArtworkImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCArtworkImageView.m; sourceTree = "<group>"; };
 		D984A52292399F30A2C8EEBC /* SCArtistHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCArtistHeaderView.m; sourceTree = "<group>"; };
 		DA1FB063474E448F9871172F /* SCSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCSettingsViewController.h; sourceTree = "<group>"; };
 		DB637DBF38534DB69551493F /* SCSearchDataProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCSearchDataProvider.m; sourceTree = "<group>"; };
@@ -340,6 +349,7 @@
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D01038EF30B7109A00CE7582 /* Core */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Core; sourceTree = "<group>"; };
+		D01038F830B7285D00CE7582 /* Services */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Services; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -428,7 +438,9 @@
 			isa = PBXGroup;
 			children = (
 				CD16BCE7634E4EA3EF76FA91 /* SCPlaylistDetailModel.h */,
+				790230D00BE74B87B59ED90C /* SCPlaylistDetailProvider.h */,
 				A6E9433240CAEA20DC074ED5 /* SCPlaylistDetailModel.m */,
+				F816BFE694DD4E8A8C794D98 /* SCPlaylistDetailProvider.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -437,7 +449,9 @@
 			isa = PBXGroup;
 			children = (
 				177385013A76E0A187C578FF /* SCHomeDataProvider.h */,
+				1EDB405479C842E9AD9632B5 /* SCRemoteHomeProvider.h */,
 				9541DA880C37D2E6E7AE28C0 /* SCHomeDataProvider.m */,
+				2016A7676BC74AB29633BE5C /* SCRemoteHomeProvider.m */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -734,7 +748,9 @@
 				99B9A654340AA19CB4CEE0B0 /* SCArtistCardView.h */,
 				990E6EF46315F97E6B1842C8 /* SCArtistCardView.m */,
 				A82D2CB99EFE665EE651A535 /* SCPlaylistCardView.h */,
+				8F21FD4472054BB4B0EDEDED /* SCArtworkImageView.h */,
 				D6F022B0E7D2C99708CEC87C /* SCPlaylistCardView.m */,
+				CDB84A1B37F94A4A87644E00 /* SCArtworkImageView.m */,
 				A2C57C5ADBAB8306FE3DF5BC /* SCTrackCell.h */,
 				3BA95EDD33F04C2A9410DB54 /* SCReleaseControlsCell.h */,
 				9CC1742D6DEB4FCBAD921D25 /* SCNumberedTrackCell.h */,
@@ -854,6 +870,7 @@
 		C240EDB10E9628DED760D7BE /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				D01038F830B7285D00CE7582 /* Services */,
 				D5E58C1A89919064FD7F05CF /* Models */,
 				228D424F3DBE2C2AFE566D45 /* ViewControllers */,
 				8CE328C62343B7A0C4ECA50E /* Views */,
@@ -1067,6 +1084,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				D01038EF30B7109A00CE7582 /* Core */,
+				D01038F830B7285D00CE7582 /* Services */,
 			);
 			name = Spotify;
 			productName = Spotify;
@@ -1154,6 +1172,7 @@
 			files = (
 				A725625E44D89D640632975D /* SCFeaturePlaceholderView.m in Sources */,
 				BC297864501F06DA2C8A65B7 /* SCHomeDataProvider.m in Sources */,
+				CC59D36426574754BD20D12E /* SCRemoteHomeProvider.m in Sources */,
 				D8964F80E56EF1C46DCD5C6E /* SCHomeSectionHeaderView.m in Sources */,
 				2F3ADC8973C4C345272E2818 /* SCHomeShortcutCell.m in Sources */,
 				BD29A3E2806F6439D8226684 /* SCRegistrationFormModel.m in Sources */,
@@ -1207,6 +1226,7 @@
 				9B531344CE1E5225EB47CE1C /* SCAlbumCardView.m in Sources */,
 				1803791DB2C855933960E202 /* SCArtistCardView.m in Sources */,
 				CCA2CD57A3E7347F14F17862 /* SCPlaylistCardView.m in Sources */,
+				9AA86422ACCB427E940D192C /* SCArtworkImageView.m in Sources */,
 				6A126A6A8D527058199C96A4 /* SCTrackCell.m in Sources */,
 				B6146B80884D4D62A3A18BD6 /* SCReleaseControlsCell.m in Sources */,
 				AA34E430CB53463BA332C012 /* SCNumberedTrackCell.m in Sources */,
@@ -1235,6 +1255,7 @@
 				8F30C36E07C34DDE87BAF2DD /* SCPlaybackQueueView.m in Sources */,
 				36DDE64D2E3A4C9391658A5A /* SCPlayerView.m in Sources */,
 				E3C35359B2184436A5C3768A /* SCPlaylistDetailModel.m in Sources */,
+				20F5E94E47074CF99AA6241C /* SCPlaylistDetailProvider.m in Sources */,
 				74F7F90FD495AF25BEC55C8A /* SCPlaylistDetailViewController.m in Sources */,
 				0EDD66CFD92822F8323CF0A3 /* SCPlaylistDetailView.m in Sources */,
 				67B55ED64535189182D7F5CC /* SCPlaylistHeaderView.m in Sources */,

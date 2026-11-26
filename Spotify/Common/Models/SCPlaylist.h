@@ -9,7 +9,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *subtitle;
 @property (nonatomic, copy) NSString *artworkName;
+@property (nonatomic, copy, nullable) NSURL *artworkURL;
 @property (nonatomic, copy) NSString *creatorName;
+@property (nonatomic, assign) BOOL remote;
+@property (nonatomic, copy, nullable) NSNumber *trackCount;
 @property (nonatomic, assign, getter=isSaved) BOOL saved;
 @property (nonatomic, copy) NSArray<SCTrack *> *tracks;
 

@@ -2,12 +2,14 @@
 #import "SCLibraryStore.h"
 #import "SCPlaylistDetailViewController.h"
 #import "SCPlaylistDetailModel.h"
+#import "SCPlaylistDetailProvider.h"
 #import "SCPlaylistDetailView.h"
 #import "SCPlaylistHeaderView.h"
 #import "SCPlaylistTrackCell.h"
 
 @interface SCPlaylistDetailViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
+@property (nonatomic, strong) SCPlaylistDetailProvider *provider;
 @property (nonatomic, strong) SCPlaylistDetailModel *model;
 @property (nonatomic, strong) SCPlaylistDetailView *detailView;
 
@@ -20,6 +22,7 @@
 - (instancetype)initWithPlaylist:(SCPlaylist *)playlist {
     if ((self = [super initWithNibName:nil bundle:nil])) {
         _model = [[SCPlaylistDetailModel alloc] initWithPlaylist:playlist];
+        if (playlist.remote) _provider = [[SCPlaylistDetailProvider alloc] initWithPlaylist:playlist service:[SCNeteaseMusicService new]];
         self.title = playlist.title;
     }
     return self;
@@ -39,6 +42,14 @@
     [self.detailView setPlaylistTitle:self.model.playlist.title];
     self.detailView.collectionView.dataSource = self;
     self.detailView.collectionView.delegate = self;
+    if (self.provider) {
+        self.detailView.collectionView.refreshControl = [UIRefreshControl new];
+        [self.detailView.collectionView.refreshControl addTarget:self.provider action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
+        [self.detailView.statusButton addTarget:self action:@selector(handleStatus) forControlEvents:UIControlEventTouchUpInside];
+        __weak typeof(self) weakSelf = self;
+        self.provider.didChange = ^{ [weakSelf updateRemoteDetail]; };
+        [self.provider refresh];
+    }
     [self.detailView.backButton addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
 }
 
@@ -52,7 +63,47 @@
     }
 }
 
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    if (!self.parentViewController || self.navigationController.isBeingDismissed) [self.provider cancel];
+}
+
 #pragma mark - Actions
+
+- (void)handleStatus {
+    if (self.provider.metadataError) [self.provider retryMetadata];
+    else [self.provider loadNextPage];
+}
+
+- (void)updateRemoteDetail {
+    SCPlaylistDetailProvider *provider = self.provider;
+    NSUInteger previous = self.model.tracks.count;
+    if (self.model.playlist != provider.playlist)
+        self.model = [[SCPlaylistDetailModel alloc] initWithPlaylist:provider.playlist];
+    self.model.tracks = provider.tracks;
+    UICollectionView *list = self.detailView.collectionView;
+    if (self.model.tracks.count > previous && [list numberOfItemsInSection:0] == previous) {
+        NSMutableArray *paths = [NSMutableArray array];
+        for (NSUInteger i=previous;i<self.model.tracks.count;i++) [paths addObject:[NSIndexPath indexPathForItem:i inSection:0]];
+        [UIView performWithoutAnimation:^{ [list insertItemsAtIndexPaths:paths]; }];
+    } else if (self.model.tracks.count != previous) [list reloadData];
+    self.title = provider.playlist.title;
+    [self.detailView setPlaylistTitle:self.title];
+    for (SCPlaylistHeaderView *header in [list visibleSupplementaryViewsOfKind:UICollectionElementKindSectionHeader])
+        [header configureWithModel:self.model shuffleEnabled:(SCPlaybackManager.sharedManager.snapshot.mode == SCPlaybackModeShuffle)];
+    NSString *status;
+    BOOL actionable = NO;
+    if (provider.loadingMetadata || provider.loadingPage) status = provider.loadingMetadata ? @"Loading playlist…" : @"Loading tracks…";
+    else if (provider.metadataError || provider.pageError) {
+        status = provider.metadataError ? @"Playlist details unavailable · Retry" : @"Tracks unavailable · Retry";
+        actionable = YES;
+    } else if (!provider.tracks.count) status = @"No tracks available";
+    else if (provider.hasMore) { status = @"Load more tracks"; actionable = YES; }
+    else status = @"End of available tracks";
+    [self.detailView showStatus:status actionable:actionable];
+    if (!provider.loadingMetadata && !provider.loadingPage) [list.refreshControl endRefreshing];
+}
+
 
 - (void)savedItemsChanged:(NSNotification *)note {
     NSString *changedID = note.userInfo[@"savedIdentifier"];
@@ -85,9 +136,9 @@
             [self showNotice:playlist.title message:@"More playlist options are coming later."];
             break;
         case SCPlaylistActionPlay:
-            if (playlist.tracks.count)
+            if (self.model.tracks.count)
                 [SCLibraryStore.sharedStore recordPlayedIDs:@[ playlist.identifier ]];
-            [SCPlaybackManager.sharedManager playQueue:playlist.tracks atIndex:0 source:playlist.title];
+            [SCPlaybackManager.sharedManager playQueue:self.model.tracks atIndex:0 source:playlist.title];
             break;
     }
 }
@@ -95,7 +146,7 @@
 #pragma mark - Delegate / DataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return self.model.playlist.tracks.count;
+    return self.model.tracks.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
@@ -103,7 +154,7 @@
     SCPlaylistTrackCell *cell =
         [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass(SCPlaylistTrackCell.class)
                                                   forIndexPath:indexPath];
-    [cell configureWithTrack:self.model.playlist.tracks[indexPath.item]];
+    [cell configureWithTrack:self.model.tracks[indexPath.item]];
     __weak typeof(self) weakSelf = self;
     cell.moreAction = ^(SCTrack *track) {
         [weakSelf showNotice:track.title message:@"More track options are coming later."];
@@ -131,8 +182,8 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
     [SCLibraryStore.sharedStore recordPlayedIDs:@[ self.model.playlist.identifier ]];
-    SCTrack *track = self.model.playlist.tracks[indexPath.item];
-    [SCPlaybackManager.sharedManager playQueue:self.model.playlist.tracks
+    SCTrack *track = self.model.tracks[indexPath.item];
+    [SCPlaybackManager.sharedManager playQueue:self.model.tracks
                                        atIndex:indexPath.item
                                         source:self.model.playlist.title];
     if (self.trackSelectionHandler) {
@@ -142,6 +193,9 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     [self.detailView updateNavigationAppearance];
+    if (scrollView.contentOffset.y > 0 && (scrollView.dragging || scrollView.decelerating) &&
+        scrollView.contentOffset.y + scrollView.bounds.size.height >= scrollView.contentSize.height - 180 &&
+        !self.provider.pageError && self.provider.tracks.count) [self.provider loadNextPage];
 }
 
 #pragma mark - Private Methods

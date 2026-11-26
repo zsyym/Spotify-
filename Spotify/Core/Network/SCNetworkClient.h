@@ -9,11 +9,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class AFHTTPSessionManager;
+typedef void (^SCNetworkSuccessBlock)(NSHTTPURLResponse *_Nullable response, id _Nullable responseObject);
+typedef void (^SCNetworkFailureBlock)(NSHTTPURLResponse *_Nullable response, NSError *error);
 
 @interface SCNetworkClient : NSObject
 
-+(AFHTTPSessionManager *) sharedSessionManager;
++ (nullable NSURLSessionTask *)GET:(NSString *)path
+                        parameters:(nullable NSDictionary<NSString *, id> *)parameters
+                           success:(SCNetworkSuccessBlock)success
+                           failure:(SCNetworkFailureBlock)failure;
 
 @end
 

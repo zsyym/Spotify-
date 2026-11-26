@@ -1,5 +1,6 @@
 #import "SCMainTabBarController.h"
 #import "SCHomeViewController.h"
+#import "SCRemoteHomeProvider.h"
 #import "SCSearchViewController.h"
 #import "SCLibraryViewController.h"
 #import "SCMusicStyle.h"
@@ -20,8 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.overrideUserInterfaceStyle = UIUserInterfaceStyleDark;
-    NSArray<UIViewController *> *roots =
-        @[ [SCHomeViewController new], [SCSearchViewController new], [SCLibraryViewController new] ];
+    NSArray<UIViewController *> *roots = @[
+        [[SCHomeViewController alloc] initWithDataProvider:[SCRemoteHomeProvider new]],
+        [SCSearchViewController new],
+        [SCLibraryViewController new]
+    ];
     NSArray<NSString *> *titles = @[ @"Home", @"Search", @"Your Library" ];
     NSArray<NSString *> *symbols = @[ @"house", @"magnifyingglass", @"square.stack" ];
     NSArray<NSString *> *selectedSymbols = @[ @"house.fill", @"magnifyingglass", @"square.stack.fill" ];

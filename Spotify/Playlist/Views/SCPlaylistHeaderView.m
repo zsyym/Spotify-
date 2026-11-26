@@ -1,9 +1,11 @@
 #import "SCPlaylistHeaderView.h"
 #import "SCMusicStyle.h"
+#import "SCArtworkImageView.h"
+#import "SCAlbum.h"
 
 @interface SCPlaylistHeaderView ()
 
-@property (nonatomic, strong) UIImageView *artwork;
+@property (nonatomic, strong) SCArtworkImageView *artwork;
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UILabel *descriptionLabel;
 @property (nonatomic, strong) UILabel *creatorLabel;
@@ -28,11 +30,13 @@
     return self;
 }
 
+- (void)prepareForReuse { [super prepareForReuse]; [self.artwork cancelArtworkLoad]; }
+
 #pragma mark - Public Methods
 
 - (void)configureWithModel:(SCPlaylistDetailModel *)model shuffleEnabled:(BOOL)shuffleEnabled {
     SCPlaylist *playlist = model.playlist;
-    self.artwork.image = [UIImage imageNamed:playlist.artworkName];
+    [self.artwork showURL:playlist.artworkURL placeholderName:playlist.artworkName];
     self.titleLabel.text = playlist.title;
     self.descriptionLabel.text = playlist.subtitle;
     self.creatorLabel.text = playlist.creatorName;
@@ -55,7 +59,7 @@
 #pragma mark - UI Setup
 
 - (void)setupUI {
-    self.artwork = [UIImageView new];
+    self.artwork = [SCArtworkImageView new];
     self.artwork.contentMode = UIViewContentModeScaleAspectFill;
     self.artwork.clipsToBounds = YES;
     self.artwork.layer.cornerRadius = SCMusicArtworkRadius;

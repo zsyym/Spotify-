@@ -1,5 +1,7 @@
 #import "SCHomeSectionModel.h"
 
+@class SCPlaylist;
+
 NS_ASSUME_NONNULL_BEGIN
 
 typedef void (^SCHomeSectionsCompletion)(NSArray<SCHomeSectionModel *> *sections, NSError *_Nullable error);
@@ -7,8 +9,13 @@ typedef void (^SCHomeSectionsCompletion)(NSArray<SCHomeSectionModel *> *sections
 
 - (void)loadSectionsWithCompletion:(SCHomeSectionsCompletion)completion;
 
+@optional
+- (void)cancelLoading;
+
 @end
 @interface SCHomeDataProvider : NSObject <SCHomeDataProviding>
+
++ (NSArray<SCHomeSectionModel *> *)sectionsWithRecommendedPlaylists:(NSArray<SCPlaylist *> *)playlists;
 
 @end
 

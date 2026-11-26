@@ -6,6 +6,7 @@
 
 - (instancetype)init {
     if ((self = [super init])) {
+        _artists = @[];
         _identifier = @"";
         _title = @"";
         _subtitle = @"";

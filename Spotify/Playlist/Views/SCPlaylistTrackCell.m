@@ -1,9 +1,11 @@
 #import "SCPlaylistTrackCell.h"
 #import "SCMusicStyle.h"
+#import "SCArtworkImageView.h"
+#import "SCAlbum.h"
 
 @interface SCPlaylistTrackCell ()
 
-@property (nonatomic, strong) UIImageView *artwork;
+@property (nonatomic, strong) SCArtworkImageView *artwork;
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UILabel *artistLabel;
 @property (nonatomic, strong) UIButton *moreButton;
@@ -28,20 +30,26 @@
     self.contentView.backgroundColor = highlighted ? SCMusicColor(0x242424) : UIColor.clearColor;
 }
 
+- (void)prepareForReuse { [super prepareForReuse]; [self.artwork cancelArtworkLoad]; }
+
 #pragma mark - Public Methods
 
 - (void)configureWithTrack:(SCTrack *)track {
     self.track = track;
-    self.artwork.image = [UIImage imageNamed:track.artworkName];
+    [self.artwork showURL:track.artworkURL placeholderName:track.artworkName];
     self.titleLabel.text = track.title;
-    self.artistLabel.text = track.artist.name ?: track.subtitle;
+    NSMutableArray *labels = [NSMutableArray array];
+    NSString *credits = track.artists.count ? track.subtitle : (track.artist.name ?: track.subtitle);
+    if (credits.length) [labels addObject:credits];
+    if (track.album.title.length) [labels addObject:track.album.title];
+    self.artistLabel.text = [labels componentsJoinedByString:@" · "];
     self.accessibilityLabel = [NSString stringWithFormat:@"%@, %@", track.title, self.artistLabel.text];
 }
 
 #pragma mark - UI Setup
 
 - (void)setupUI {
-    self.artwork = [UIImageView new];
+    self.artwork = [SCArtworkImageView new];
     self.artwork.contentMode = UIViewContentModeScaleAspectFill;
     self.artwork.clipsToBounds = YES;
     self.artwork.layer.cornerRadius = 3;

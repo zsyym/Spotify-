@@ -1,9 +1,11 @@
 #import "SCPlaylistCardView.h"
 #import "SCMusicStyle.h"
+#import "SCPlaylist.h"
+#import "SCArtworkImageView.h"
 
 @interface SCPlaylistCardView ()
 
-@property (nonatomic, strong) UIImageView *coverView;
+@property (nonatomic, strong) SCArtworkImageView *coverView;
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UILabel *subtitleLabel;
 
@@ -24,7 +26,8 @@
 #pragma mark - Public Methods
 
 - (void)configureWithItem:(id<SCMusicItem>)item showsSubtitle:(BOOL)showsSubtitle {
-    self.coverView.image = [UIImage imageNamed:item.artworkName];
+    NSURL *url = [(NSObject *)item isKindOfClass:SCPlaylist.class] ? ((SCPlaylist *)item).artworkURL : nil;
+    [self.coverView showURL:url placeholderName:item.artworkName];
     self.titleLabel.text = item.title;
     self.subtitleLabel.text = showsSubtitle ? item.subtitle : @"";
     self.subtitleLabel.hidden = !showsSubtitle;
@@ -32,12 +35,14 @@
         showsSubtitle ? [NSString stringWithFormat:@"%@, %@", item.title, item.subtitle] : item.title;
 }
 
+- (void)cancelArtworkLoad { [self.coverView cancelArtworkLoad]; }
+
 #pragma mark - UI Setup
 
 - (void)setupUI {
     self.isAccessibilityElement = YES;
     self.accessibilityTraits = UIAccessibilityTraitButton;
-    self.coverView = [UIImageView new];
+    self.coverView = [SCArtworkImageView new];
     self.coverView.contentMode = UIViewContentModeScaleAspectFill;
     self.coverView.clipsToBounds = YES;
     self.coverView.layer.cornerRadius = 6;

@@ -104,17 +104,16 @@
 
 ## 真实音乐业务 · Learning Driven Development
 
-2026-11-25，Music Phase 0 完成项目盘点、指定文档核对和九个匿名 GET 调研。[接口与真实样本](docs/api/NeteaseCloudMusicAPI.md)。以下阶段均待学习与实现，由开发者亲自编写核心代码，每次验收一个任务。
+2026-11-25 完成 Phase 0 的九个匿名 GET 调研。[接口与真实样本](docs/api/NeteaseCloudMusicAPI.md)
 
-| Music Phase 1 实战任务 | 练习与验收 |
+自 2026-11-26 起逐项在项目内实现，每阶段完成构建、必要测试、技术学习记录及路线图更新，等待确认后进入下一项。
+
+| Music Phase 1 | 阶段结果与验收范围 |
 |---|---|
-| 1 · 配置 Manager 并发起真实 GET（当前，待开发者验收） | 共用 AFHTTPSessionManager，匿名请求 song/detail，使用 347230 与 0 分别验证歌曲、空集合及回调日志。 |
-| 2 · 统一 GET | 从第一次实验提取通用参数、回调与 task 返回值。 |
-| 3 · 错误处理 | 区分传输、HTTP、解码及业务层结果。 |
-| 4 · 生命周期与取消 | 用真实 task 验证取消、迟到回调与页面离开。 |
-| 5 · Music Service | 封装具体接口契约。 |
-| 6 · YYModel 映射 | 用 Phase 0 样本验证 ID、时长、嵌套字段与空集合。 |
-| 7 · Home Provider | 接入真实数据，校验主线程交付及空结果。 |
-| 8 · 阶段验收 | 基于开发者实际代码进行只读 Review 与回归检查。 |
+| Task 1–3 · NetworkClient、通用 GET、公共推荐 Service | 已复核匿名 Manager 配置、取消入口、错误传递及接口契约。首次实际首页联网随首页接入验收。 |
+| Task 4 · YYModel 推荐歌单映射 | 已实现。Spotify 模拟器构建和离线真实样本回归通过。[源码解析与自测](docs/learning/03-YYModel.md) |
+| Task 5 · 真实 Home Provider | 已实现。共享分区组装、推荐空结果与错误、取消及迟到回调通过离线验证，Spotify 模拟器构建通过。[技术复盘](docs/learning/04-HomeProvider.md) |
+| Task 6 · 真实首页接入与联网验收 | 已通过。模拟器正式首页返回六条推荐、六张封面，详情入口保留模型身份。[验收与学习文档](docs/learning/05-HomeRemoteIntegration.md) |
+| Task 7 · 歌单详情与歌曲列表 | 待确认，根据远端歌单 ID 请求真实详情与歌曲列表。 |
 
-后续按数据、播放、缓存与并发优化的依赖顺序推进。旧计划中的 YYModel 与首页首次接入已并入上述实战任务。框架原理随各次实现与调试学习。
+后续按歌单详情、歌曲搜索与竞态、播放 URL、AVPlayer 与队列、歌词与系统播放集成、缓存、并发优化、收藏与最近播放的依赖顺序推进。

@@ -37,8 +37,21 @@
 #pragma mark - Public Methods
 
 - (void)showSections:(NSArray<SCHomeSectionModel *> *)sections {
+    BOOL onlyRecommendationsChanged = self.sections.count > 0 && self.sections.count == sections.count;
+    for (NSUInteger i = 0; onlyRecommendationsChanged && i + 1 < sections.count; i++) {
+        SCHomeSectionModel *old = self.sections[i];
+        SCHomeSectionModel *updated = sections[i];
+        onlyRecommendationsChanged =
+            old.kind == updated.kind && [old.title isEqual:updated.title] && [old.items isEqual:updated.items];
+    }
     self.sections = [sections copy];
-    [self.collectionView reloadData];
+    if (onlyRecommendationsChanged) {
+        [UIView performWithoutAnimation:^{
+            [self.collectionView reloadSections:[NSIndexSet indexSetWithIndex:sections.count - 1]];
+        }];
+    } else {
+        [self.collectionView reloadData];
+    }
     [self.collectionView.collectionViewLayout invalidateLayout];
 }
 
@@ -57,6 +70,7 @@
     _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
     _collectionView.backgroundColor = UIColor.clearColor;
     _collectionView.alwaysBounceVertical = YES;
+    _collectionView.refreshControl = [UIRefreshControl new];
     _collectionView.showsVerticalScrollIndicator = NO;
     [_collectionView registerClass:SCHomeShortcutCell.class forCellWithReuseIdentifier:@"shortcut"];
     [_collectionView registerClass:SCHomePlaylistCell.class forCellWithReuseIdentifier:@"card"];

@@ -7,6 +7,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, readonly) SCPlaylist *playlist;
 @property (nonatomic, copy, readonly) NSString *trackSummary;
 
+@property (nonatomic, copy) NSArray<SCTrack *> *tracks;
+
 - (instancetype)initWithPlaylist:(SCPlaylist *)playlist;
 - (instancetype)init NS_UNAVAILABLE;
 
